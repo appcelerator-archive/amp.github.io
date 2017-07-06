@@ -1,0 +1,540 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/static/css/style.css" />
+		<link rel="shortcut icon" href="/static/img/dev-favicon.png" />
+
+		<title>AMP | Docs</title>
+		<script>
+			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+			ga('create', 'UA-10641787-5', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<script async src='https://www.google-analytics.com/analytics.js'></script>
+	</head>
+
+	<body class="is-dev">
+		<nav class="nav">
+			<div class="centered">
+				<div class="nav-projects">
+					<a class="nav-project nav-project-dev active" href="/">
+						<svg width="40px" height="40px" viewBox="0 0 40 40">
+                            <ellipse stroke-width="3" cx="20" cy="20" rx="18.5" ry="18.5" fill="0" stroke="#000" />
+                            <path fill-rule="evenodd" d="M4.98917024,14.4489557 C4.34944108,16.1782522 4,18.0483179 4,20 C4,28.836556 11.163444,36 20,36 C25.3372103,36 30.0640585,33.3867291 32.9708034,29.3699284 L32.9708034,29.3699284 C32.7542032,29.1158875 32.5851628,28.8136799 32.5213775,28.5419031 L31.2169086,22.9838131 C31.1059526,22.5110509 30.6116318,22.1192596 30.1152853,22.1192596 L28.4921437,22.1192596 C27.9858118,22.1192596 27.3609962,21.7891428 27.0742761,21.3819231 L26.5647528,20.6582629 C25.7154881,19.4520786 25.8505167,17.5995152 26.8651421,16.5187344 L26.9854581,16.3905737 C27.318883,16.0354089 27.9695174,15.6094255 28.4334461,15.4446996 L29.3188401,15.1303252 C29.7803195,14.966469 30.5349459,14.9655993 30.9988746,15.1303252 L31.8842686,15.4446996 C32.3457481,15.6085558 33.1107334,15.8458733 33.5874405,15.9728206 L35.6191135,16.513856 C35.4978108,15.9679684 35.3486212,15.4325805 35.1731165,14.9092644 C34.3263749,14.7238868 33.4055455,14.2746017 32.8663979,13.7497894 L32.3015162,13.1999272 L30.4205895,13.1999271 C29.9369463,13.1999271 29.3014167,13.5302589 29.0223398,13.9377438 L28.6896027,14.4235789 C28.1260613,15.2464153 27.4185905,15.1412987 27.0980851,14.2053481 L27.0412779,14.0394576 C26.882355,13.5753657 27.1532065,13.199927 27.6459111,13.199927 L27.7109116,13.199927 C28.2108557,13.199927 28.6030323,12.796967 28.6030323,12.2998905 C28.6030324,11.7993486 29.0024484,11.399854 29.4951531,11.399854 L30.4522743,11.399854 L30.7448301,11.1150769 C31.0843394,10.7845948 31.0209719,10.3265877 30.5819181,10.1128978 L30.3226304,9.98670097 C29.8842057,9.77331723 29.8835766,9.42655123 30.3226304,9.21286132 L30.5819181,9.08666449 C30.8796701,8.94174691 31.4270561,9.05187418 31.74767,9.13746427 L31.74767,9.13746427 C29.354055,6.5500601 26.1162974,4.75498325 22.4719557,4.1897922 L22.4719557,4.1897922 L23.5257222,5.21678951 C24.2305071,5.90367045 24.0320251,6.65048619 23.0799479,6.88245898 L21.4350099,7.28324666 L20.1865042,8.50003612 C19.4817194,9.18691704 18.4903848,9.06670377 17.9747489,8.2291421 L17.3154121,7.15816288 C16.7989905,6.31932509 17.052872,5.20558795 17.8807174,4.66771105 L17.4094436,4.97391227 C18.1837126,4.47084565 19.4969845,4.06343412 20.4690548,4.00674356 C20.3132511,4.0022581 20.1568893,4 20,4 C16.3409492,4 12.9687755,5.22826668 10.2732905,7.29498839 L9.34598541,8.7 C9.34598541,8.7 11.1732265,9.31523437 11.1732265,9.31523437 C11.6403222,9.47250609 12.1428675,9.22457657 12.3008953,8.74570313 L12.6280585,7.75429687 C12.7837571,7.28248174 13.2647344,7.07917156 13.7009406,7.29947834 L14.8796059,7.89476545 C15.7601466,8.33948421 16.7269068,9.46648951 17.0331889,10.3946197 L17.0830463,10.5457031 C17.2387449,11.0175183 16.9561285,11.4 16.4656183,11.4 L13.8009733,11.4 L12.0189781,13.2 L12.0189781,15.015919 C12.0189781,15.5041835 11.7405414,15.61875 11.3957227,15.2704473 L10.236983,14.1 L9.25216787,14.5973827 C8.8118975,14.8197421 8.45498784,15.3994783 8.45498784,15.9 C8.45498784,16.3970563 8.80456327,17.0118645 9.2107158,17.2580182 L12.9099757,19.5 L13.8947908,19.0026173 C14.3350612,18.7802579 15.0162561,18.8183745 15.4320035,19.0983398 L19.7477607,22.0045816 C21.3842844,23.1066207 21.4906005,25.0341584 19.9878775,26.3076091 L16.4715636,29.2874348 C16.0984226,29.6036452 15.5824366,30.1960211 15.3130082,30.6200946 L13.8009729,33 C13.3088887,33 12.995925,32.6093202 13.1006804,32.1331581 L14.3096882,26.6376532 C14.520817,25.6779738 13.9707442,24.5357431 13.0976108,24.0947654 L12.7223406,23.9052346 C11.8417999,23.4605158 11.4800454,22.3887558 11.9199672,21.5000227 L12.9099757,19.5 L8.41107755,17.9852154 C7.94324417,17.8276953 7.31902279,17.3906968 7.00711679,16.996875 L4.98917024,14.4489557 Z"></path>
+						</svg>
+						For<br/>Devs
+					</a>
+					<a class="nav-project nav-project-devops " href="/devops/">
+						<svg width="40px" height="40px" viewBox="0 0 40 40">
+							<ellipse stroke-width="3" cx="20" cy="20" rx="18.5" ry="18.5" fill="0" stroke="#000" />
+							<path fill-rule="evenodd" d="M4.98917024,14.4489557 C4.34944108,16.1782522 4,18.0483179 4,20 C4,28.836556 11.163444,36 20,36 C25.3372103,36 30.0640585,33.3867291 32.9708034,29.3699284 L32.9708034,29.3699284 C32.7542032,29.1158875 32.5851628,28.8136799 32.5213775,28.5419031 L31.2169086,22.9838131 C31.1059526,22.5110509 30.6116318,22.1192596 30.1152853,22.1192596 L28.4921437,22.1192596 C27.9858118,22.1192596 27.3609962,21.7891428 27.0742761,21.3819231 L26.5647528,20.6582629 C25.7154881,19.4520786 25.8505167,17.5995152 26.8651421,16.5187344 L26.9854581,16.3905737 C27.318883,16.0354089 27.9695174,15.6094255 28.4334461,15.4446996 L29.3188401,15.1303252 C29.7803195,14.966469 30.5349459,14.9655993 30.9988746,15.1303252 L31.8842686,15.4446996 C32.3457481,15.6085558 33.1107334,15.8458733 33.5874405,15.9728206 L35.6191135,16.513856 C35.4978108,15.9679684 35.3486212,15.4325805 35.1731165,14.9092644 C34.3263749,14.7238868 33.4055455,14.2746017 32.8663979,13.7497894 L32.3015162,13.1999272 L30.4205895,13.1999271 C29.9369463,13.1999271 29.3014167,13.5302589 29.0223398,13.9377438 L28.6896027,14.4235789 C28.1260613,15.2464153 27.4185905,15.1412987 27.0980851,14.2053481 L27.0412779,14.0394576 C26.882355,13.5753657 27.1532065,13.199927 27.6459111,13.199927 L27.7109116,13.199927 C28.2108557,13.199927 28.6030323,12.796967 28.6030323,12.2998905 C28.6030324,11.7993486 29.0024484,11.399854 29.4951531,11.399854 L30.4522743,11.399854 L30.7448301,11.1150769 C31.0843394,10.7845948 31.0209719,10.3265877 30.5819181,10.1128978 L30.3226304,9.98670097 C29.8842057,9.77331723 29.8835766,9.42655123 30.3226304,9.21286132 L30.5819181,9.08666449 C30.8796701,8.94174691 31.4270561,9.05187418 31.74767,9.13746427 L31.74767,9.13746427 C29.354055,6.5500601 26.1162974,4.75498325 22.4719557,4.1897922 L22.4719557,4.1897922 L23.5257222,5.21678951 C24.2305071,5.90367045 24.0320251,6.65048619 23.0799479,6.88245898 L21.4350099,7.28324666 L20.1865042,8.50003612 C19.4817194,9.18691704 18.4903848,9.06670377 17.9747489,8.2291421 L17.3154121,7.15816288 C16.7989905,6.31932509 17.052872,5.20558795 17.8807174,4.66771105 L17.4094436,4.97391227 C18.1837126,4.47084565 19.4969845,4.06343412 20.4690548,4.00674356 C20.3132511,4.0022581 20.1568893,4 20,4 C16.3409492,4 12.9687755,5.22826668 10.2732905,7.29498839 L9.34598541,8.7 C9.34598541,8.7 11.1732265,9.31523437 11.1732265,9.31523437 C11.6403222,9.47250609 12.1428675,9.22457657 12.3008953,8.74570313 L12.6280585,7.75429687 C12.7837571,7.28248174 13.2647344,7.07917156 13.7009406,7.29947834 L14.8796059,7.89476545 C15.7601466,8.33948421 16.7269068,9.46648951 17.0331889,10.3946197 L17.0830463,10.5457031 C17.2387449,11.0175183 16.9561285,11.4 16.4656183,11.4 L13.8009733,11.4 L12.0189781,13.2 L12.0189781,15.015919 C12.0189781,15.5041835 11.7405414,15.61875 11.3957227,15.2704473 L10.236983,14.1 L9.25216787,14.5973827 C8.8118975,14.8197421 8.45498784,15.3994783 8.45498784,15.9 C8.45498784,16.3970563 8.80456327,17.0118645 9.2107158,17.2580182 L12.9099757,19.5 L13.8947908,19.0026173 C14.3350612,18.7802579 15.0162561,18.8183745 15.4320035,19.0983398 L19.7477607,22.0045816 C21.3842844,23.1066207 21.4906005,25.0341584 19.9878775,26.3076091 L16.4715636,29.2874348 C16.0984226,29.6036452 15.5824366,30.1960211 15.3130082,30.6200946 L13.8009729,33 C13.3088887,33 12.995925,32.6093202 13.1006804,32.1331581 L14.3096882,26.6376532 C14.520817,25.6779738 13.9707442,24.5357431 13.0976108,24.0947654 L12.7223406,23.9052346 C11.8417999,23.4605158 11.4800454,22.3887558 11.9199672,21.5000227 L12.9099757,19.5 L8.41107755,17.9852154 C7.94324417,17.8276953 7.31902279,17.3906968 7.00711679,16.996875 L4.98917024,14.4489557 Z"></path>
+						</svg>
+						For<br/>Devops
+					</a>
+				</div>
+				<div class="nav-pages">
+					
+						<a href="../" >Home</a>
+					
+						<a href="." class="active">Docs</a>
+					
+						<a href="../guides/" >Guides</a>
+					
+					<a href="https://github.com/appcelerator/dev/">GitHub</a>
+				</div>
+			</div>
+		</nav>
+
+		
+
+
+
+<div class="hero hero-oneline">
+	<div class="hero-centered">
+		<h1>AMP Documentation</h1>
+	</div>
+</div>
+
+<div class="docs">
+	<div class="docs-nav">
+		
+			<div class="docs-nav-section">
+				<a class="docs-nav-section-title" href='#/getting-started/'></a>
+				
+					
+				
+					
+						<a class="docs-nav-item" href="#/getting-started/prerequisites/">Prerequisites</a>
+					
+				
+					
+						<a class="docs-nav-item" href="#/getting-started/install/">Download the AMP CLI</a>
+					
+				
+					
+						<a class="docs-nav-item" href="#/getting-started/certificates/">Self-signed certificates</a>
+					
+				
+					
+						<a class="docs-nav-item" href="#/getting-started/edge-version/">Using the latest &quot;edge&quot; version</a>
+					
+				
+					
+						<a class="docs-nav-item" href="#/getting-started/usage/">Using AMP</a>
+					
+				
+					
+						<a class="docs-nav-item" href="#/getting-started/example/">Example</a>
+					
+				
+					
+						<a class="docs-nav-item" href="#/getting-started/view-logs/">View logs</a>
+					
+				
+					
+						<a class="docs-nav-item" href="#/getting-started/view-stats/">View metrics</a>
+					
+				
+					
+						<a class="docs-nav-item" href="#/getting-started/teams/">Teams</a>
+					
+				
+			</div>
+		
+	</div>
+
+	<div class="docs-content">
+		
+			<article class="docs-section">
+				<a class="docs-section-target" id="/getting-started/" name="/getting-started/"></a>
+				<h2 class="docs-section-title"><a href='#/getting-started/'></a></h2>
+			</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/getting-started/"  name="/getting-started/getting-started/"></a>
+					
+					<div class="docs-method-prose">
+						
+						<h2 id="getting-started">Getting Started</h2>
+<p>The following brief guide will help you get up and
+running quickly.</p>
+
+					</div>
+				</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/prerequisites/"  name="/getting-started/prerequisites/"></a>
+					
+						<h3 class="docs-method-title">
+							<a href='#/getting-started/prerequisites/'>Prerequisites</a>
+							
+						</h3>
+						<a class="docs-method-edit" href="https://github.com/moment/momentjs.com/blob/master/doc/dev/00-getting-started/01-prerequisites.md" target="_blank">edit</a>
+					
+					<div class="docs-method-prose">
+						
+						<p>We recommend installing the Docker CE stable channel release 17.06 on your system.
+Make sure you check the &quot;What to know before you install&quot; section on the Docker site to ensure your system meets the requirements.</p>
+<blockquote>
+<p>NOTE: We currently do not support Docker Toolbox on any OS.</p>
+</blockquote>
+<h4 id="macos">MacOS</h4>
+<p>On MacOS, Docker can be installed via the Docker website.</p>
+<p><a href="https://docs.docker.com/docker-for-mac/install/">Docker for Mac</a></p>
+<h4 id="windows">Windows</h4>
+<p>On Windows, Docker can be installed via the Docker website.</p>
+<p><a href="https://docs.docker.com/docker-for-windows/install/">Docker for Windows</a></p>
+<h4 id="linux">Linux</h4>
+<p>On Linux, Docker can be installed via the Docker website. You can find your specific distribution in the tables.</p>
+<p><a href="https://docs.docker.com/engine/installation/">Docker for Linux</a></p>
+<p>In addition, there is another step you must perform for your system.</p>
+<p>Increase virtual memory (needed for Elasticsearch):</p>
+<pre><code>$ sudo sysctl -w vm.max_map_count=262144</code></pre>
+<p>To make this change permanent, you can run the following and reboot:</p>
+<pre><code>$ echo &quot;vm.max_map_count = 262144&quot; | sudo tee -a /etc/sysctl.conf</code></pre>
+
+					</div>
+				</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/install/"  name="/getting-started/install/"></a>
+					
+						<h3 class="docs-method-title">
+							<a href='#/getting-started/install/'>Download the AMP CLI</a>
+							
+						</h3>
+						<a class="docs-method-edit" href="https://github.com/moment/momentjs.com/blob/master/doc/dev/00-getting-started/02-install.md" target="_blank">edit</a>
+					
+					<div class="docs-method-prose">
+						
+						<p>Download the latest release of the CLI for your platform:</p>
+<p><a href="https://github.com/appcelerator/amp/releases">https://github.com/appcelerator/amp/releases</a></p>
+<p>Place the <code>amp</code> binary from the release archive into some location in your system path. For example:</p>
+<pre><code>$ sudo mv ./amp /usr/local/bin</code></pre>
+
+					</div>
+				</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/certificates/"  name="/getting-started/certificates/"></a>
+					
+						<h3 class="docs-method-title">
+							<a href='#/getting-started/certificates/'>Self-signed certificates</a>
+							
+						</h3>
+						<a class="docs-method-edit" href="https://github.com/moment/momentjs.com/blob/master/doc/dev/00-getting-started/03-certificates.md" target="_blank">edit</a>
+					
+					<div class="docs-method-prose">
+						
+						<h3 id="certificates">Certificates</h3>
+<p>The connection between the CLI and the ANP server is secured with TLS.</p>
+<p>When you run the AMP environment on your own machine, a self-signed certificate
+is automatically generated. You will need to use the <code>-k</code> option or add the
+CA to your local key store.</p>
+
+					</div>
+				</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/edge-version/"  name="/getting-started/edge-version/"></a>
+					
+						<h3 class="docs-method-title">
+							<a href='#/getting-started/edge-version/'>Using the latest &quot;edge&quot; version</a>
+							
+						</h3>
+						<a class="docs-method-edit" href="https://github.com/moment/momentjs.com/blob/master/doc/dev/00-getting-started/04-edge-version.md" target="_blank">edit</a>
+					
+					<div class="docs-method-prose">
+						
+						<p>Alternatively, if you wish to work with the latest development version directly from <code>master</code> on Github,
+you can fork the repo and build your own CLI. The entire toolchain has been containerized so you do not need
+to install <code>go</code>, <code>make</code>, or any other tools on your system (other than Docker).</p>
+<p>To get the repo setup, you can run the following set of commands:</p>
+<pre><code>$ cd $GOPATH/src
+$ mkdir -p github.com/appcelerator
+$ cd github.com/appcelerator
+$ git clone https://github.com/appcelerator/amp
+$ cd amp
+$ export PATH=bin/{YourOS}/amd64:$PATH</code></pre>
+<p>This will clone the repository into your <code>go</code> workspace and add the CLI path to your system <code>$PATH</code>.</p>
+<p>To build the CLI, you can then run:</p>
+<pre><code>$ ampmake buildall-cli</code></pre>
+<p>This will build cross-compiled versions of the CLI and place them in the appropriate locations under <code>./bin</code>.</p>
+<p>If you already have <code>gnu</code> installed on your system, you can instead run:</p>
+<pre><code>$ make build-cli</code></pre>
+<p>This will build your OS-specific CLI in <code>./bin</code> and it is much faster.</p>
+
+					</div>
+				</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/usage/"  name="/getting-started/usage/"></a>
+					
+						<h3 class="docs-method-title">
+							<a href='#/getting-started/usage/'>Using AMP</a>
+							
+						</h3>
+						<a class="docs-method-edit" href="https://github.com/moment/momentjs.com/blob/master/doc/dev/00-getting-started/05-usage.md" target="_blank">edit</a>
+					
+					<div class="docs-method-prose">
+						
+						<p>Run <code>amp --help</code> to get the CLI help menu for amp.</p>
+<pre><code>$ amp --help
+
+Usage:    amp [OPTIONS] COMMAND 
+
+Deploy, manage, and monitor container stacks.
+
+Examples:
+amp version
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
+  -v, --version         Print version information and quit
+
+Management Commands:
+  cluster     Cluster management operations
+  org         Organization management operations
+  password    Password management operations
+  service     Service management operations
+  stack       Stack management operations
+  team        Team management operations
+  user        User management operations
+
+Commands:
+  config      Display configuration
+  login       Login to account
+  logout      Logout of account
+  logs        Display filtered logs
+  stats       Display statistics
+  version     Show version information
+  whoami      Display currently logged in account name
+
+Run &#39;amp COMMAND --help&#39; for more information on a command.</code></pre>
+<blockquote>
+<p><em>A large number of AMP commands are interactive, so if necessary options are not provided
+you will be prompted to provide them before the command runs</em>.</p>
+</blockquote>
+<h3 id="target-an-amp-cluster">Target an AMP cluster</h3>
+<p>When using <code>amp</code>, every command takes the <code>--server|-s</code> option.
+This option is used to define the target cluster you will be running your commands with.
+The target server is displayed at the top of every CLI command output.
+You can also add a default <code>--server|-s</code> value to your <code>amp.yml</code> config file.</p>
+<blockquote>
+<p>For more information on creating your configuration file, see the <a href="config.md">config documentation</a>.</p>
+</blockquote>
+<p>The server location of our hosted AMP is <code>COMING SOON</code>. This location is currently
+acting as a playground for anyone to signup and use as they like.</p>
+<p>The default value for the <code>--server|-s</code> option is <code>localhost:50101</code>, which points to a local
+cluster that can be deployed on your system&#39;s docker engine.</p>
+<p>In order to make sure you&#39;re connected to the specified server when running commands,
+you can run the <code>amp version</code> command to test this.</p>
+<pre><code>$ amp -s your.server.com version
+[your.server.com:50101]
+Client:
+ Version:       v0.12.0-dev
+ Build:         fe0947b5
+ Server:        your.server.com:50101
+ Go version:    go1.8.1
+ OS/Arch:       darwin/amd64
+
+Server:
+ Version:       v0.12.0-dev
+ Build:         fd732802
+ Go version:    go1.8.1
+ OS/Arch:       linux/amd64</code></pre>
+<h4 id="creating-a-local-amp-cluster">Creating a local AMP cluster</h4>
+<pre><code>$ amp cluster create</code></pre>
+<blockquote>
+<p><em>If you are using the unstable version of the CLI, you will need to build the <code>amp-bootstrap</code>
+image using the command <code>make build-bootstrap</code> or <code>ampmake build-bootstrap</code> if your don&#39;t have the build tools,
+and then specify the <code>--tag=local</code> option to the CLI</em></p>
+</blockquote>
+<p>For more examples of cluster commands and deployment in different environments, see the <a href="cluster.md">cluster documentation</a>.</p>
+<h3 id="signing-up-and-logging-in">Signing up and logging in</h3>
+<p>In order to be able to use AMP, you will need to signup for a user account, verify the account
+and login.</p>
+<blockquote>
+<p>NOTE: Don&#39;t forget to specify your desired server target!</p>
+</blockquote>
+<p>To signup for amp use:</p>
+<pre><code>$ amp user signup
+username: sample
+email: sample@user.com
+password: [password]</code></pre>
+<p>After signing up, you will then be sent an email to your registered address. In this email, you will
+be sent a link to verify your account with or you can verify your account with the provided CLI command.</p>
+<blockquote>
+<p><em>The verification step is skipped for local deployment, you&#39;ll be logged automatically</em></p>
+</blockquote>
+<p>To verify your account using the token in verification email.</p>
+<pre><code>$ amp user verify [token]</code></pre>
+<blockquote>
+<p>NOTE: You do not need to verify your account on a local cluster</p>
+</blockquote>
+<p>To login to amp</p>
+<pre><code>$ amp login
+username: sample
+password: [password]</code></pre>
+<p>If you are having issues signing up or logging in, see the <a href="user.md">user documentation</a>.</p>
+<p>If you are have forgotten or want to change your password, see the <a href="password.md">password documentation</a></p>
+<h3 id="ui-and-dashboard">UI and Dashboard</h3>
+<p>Along with our CLI, after deploying a cluster to your desired environment, you can get access to our Custom
+UI, a Grafana Dashboard and Kibana Dashboard.</p>
+<h4 id="ui">UI</h4>
+<p>local: <a href="http://local.appcelerator.io">http://local.appcelerator.io</a></p>
+<p>hosted: <a href="https://cloud.YOUR.DOMAIN">https://cloud.YOUR.DOMAIN</a></p>
+<p>Note: TLS can be use also for a local deployment, but you&#39;ll have to add the self signed certificate to your key store.</p>
+<h4 id="grafana">Grafana</h4>
+<p>local: <a href="http://dashboard.local.appcelerator.io">http://dashboard.local.appcelerator.io</a></p>
+<p>hosted: <a href="https://dashboard.YOUR.DOMAIN">https://dashboard.YOUR.DOMAIN</a></p>
+<h4 id="kibana">Kibana</h4>
+<p>local:  <a href="http://kibana.local.appcelerator.io">http://kibana.local.appcelerator.io</a></p>
+<p>hosted:  <a href="https://kibana.YOUR.DOMAIN">https://kibana.YOUR.DOMAIN</a></p>
+
+					</div>
+				</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/example/"  name="/getting-started/example/"></a>
+					
+						<h3 class="docs-method-title">
+							<a href='#/getting-started/example/'>Example</a>
+							
+						</h3>
+						<a class="docs-method-edit" href="https://github.com/moment/momentjs.com/blob/master/doc/dev/00-getting-started/06-example.md" target="_blank">edit</a>
+					
+					<div class="docs-method-prose">
+						
+						<h4 id="deploying-a-simple-stack">Deploying a simple stack</h4>
+<p>To deploy a standard Docker Compose version 3 stackfile into your cluster, use <code>amp stack deploy</code>.
+There are a number of sample stackfiles under <code>examples/stacks</code> that you can try out.</p>
+<p>Here is a simple example:</p>
+<pre><code>$ curl -O https://raw.githubusercontent.com/appcelerator/amp/master/examples/stacks/pinger/pinger.yml
+$ amp stack deploy -c pinger.yml
+$ amp stack ls
+$ amp service logs pinger
+$ curl http://pinger.examples.local.appcelerator.io/ping</code></pre>
+<p>Or browse to: <a href="https://pinger.examples.local.appcelerator.io/ping">https://pinger.examples.local.appcelerator.io/ping</a>.</p>
+<p>For more information on what you can do with your stack when it is deployed, see the <a href="stack.md">stacks documentation</a>.</p>
+<p>For more information on inspecting and manipulating the services within your stack, see the <a href="service.md">service documentation</a></p>
+
+					</div>
+				</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/view-logs/"  name="/getting-started/view-logs/"></a>
+					
+						<h3 class="docs-method-title">
+							<a href='#/getting-started/view-logs/'>View logs</a>
+							
+						</h3>
+						<a class="docs-method-edit" href="https://github.com/moment/momentjs.com/blob/master/doc/dev/00-getting-started/07-view-logs.md" target="_blank">edit</a>
+					
+					<div class="docs-method-prose">
+						
+						<h4 id="viewing-and-filtering-logs">Viewing and filtering logs</h4>
+<p>The <code>amp logs</code> command allows for the querying and filtering of both realtime and historical logs.</p>
+<p>To fetch the logs for your cluster:</p>
+<pre><code>$ amp logs
+...
+Cluster status: healthy
+2017/06/29 17:59:32 listening on :3000
+2017/06/29 17:59:37 listening on :3000
+2017/06/29 17:59:37 listening on :3000
+...</code></pre>
+<p>Following on from the previous example of deploying a stack, if you want to fetch the logs of the <code>pinger</code> stack,
+you can run:</p>
+<pre><code>$ amp stack logs pinger
+2017/06/29 17:59:32 listening on :3000
+...</code></pre>
+<p>This will get the logs of every service in the stack.</p>
+<p>If you want to get the logs for the individual services in the stack, you can run:</p>
+<pre><code>$ amp service logs pinger
+2017/06/29 17:59:32 listening on :3000
+...</code></pre>
+<p>For more detailed examples of the querying and filtering options for logs, see the <a href="logs.md">logs documentation</a></p>
+
+					</div>
+				</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/view-stats/"  name="/getting-started/view-stats/"></a>
+					
+						<h3 class="docs-method-title">
+							<a href='#/getting-started/view-stats/'>View metrics</a>
+							
+						</h3>
+						<a class="docs-method-edit" href="https://github.com/moment/momentjs.com/blob/master/doc/dev/00-getting-started/08-view-stats.md" target="_blank">edit</a>
+					
+					<div class="docs-method-prose">
+						
+						<p>The <code>amp stats</code> command allows for the querying and filtering of realtime and historical statistics.</p>
+<p>To fetch the stats of your cluster</p>
+<pre><code>$ amp stats
+Stats on services period=now-10m, No filter
+SERVICE         CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX</code></pre>
+<p>Following on from the previous example of deploying a stack, if you want to display the stats of the <code>pinger</code> stack,
+you can run:</p>
+<pre><code>$ amp stats --stack
+Stats on stacks period=now-10m, No filter
+STACK     CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX
+pinger    0.00%   6.7 MB      5.9 GB   0.3%    0/s       0/s        212.0 B/s   112.0 B/s</code></pre>
+<p>If you want to display the stats for the individual services in the stack, you can run:</p>
+<pre><code>$ amp stats --service
+Stats on services period=now-10m, No filter
+SERVICE         CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX
+pinger_pinger   0.00%   6.7 MB      5.9 GB   0.3%    0/s       0/s        214.0 B/s   112.0 B/s</code></pre>
+<p>If you want to display the stats for all the containers replicating the service, you can run:</p>
+<pre><code>$ amp stats --container
+Stats on containers period=now-10m, No filter
+CONTAINER              CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX      NET TX
+pinger_pinger_6bc02a   0.00%   1.2 MB      2.0 GB   0.1%    0/s       0/s        73.0 B/s   38.0 B/s
+pinger_pinger_6e8e55   0.00%   960.0 KB    2.0 GB   0.0%    0/s       0/s        73.0 B/s   38.0 B/s
+pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s        72.0 B/s   38.0 B/s</code></pre>
+<p>For more detailed examples of the querying and filtering options for stats, see the <a href="stats.md">stats documentation</a></p>
+
+					</div>
+				</article>
+			
+				<article class="docs-method">
+					<a class="docs-method-target" id="/getting-started/teams/"  name="/getting-started/teams/"></a>
+					
+						<h3 class="docs-method-title">
+							<a href='#/getting-started/teams/'>Teams</a>
+							
+						</h3>
+						<a class="docs-method-edit" href="https://github.com/moment/momentjs.com/blob/master/doc/dev/00-getting-started/09-teams.md" target="_blank">edit</a>
+					
+					<div class="docs-method-prose">
+						
+						<p>The <code>amp stats</code> command allows for the querying and filtering of realtime and historical statistics.</p>
+<p>To fetch the stats of your cluster</p>
+<pre><code>$ amp stats
+Stats on services period=now-10m, No filter
+SERVICE         CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX</code></pre>
+<p>Following on from the previous example of deploying a stack, if you want to display the stats of the <code>pinger</code> stack,
+you can run:</p>
+<pre><code>$ amp stats --stack
+Stats on stacks period=now-10m, No filter
+STACK     CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX
+pinger    0.00%   6.7 MB      5.9 GB   0.3%    0/s       0/s        212.0 B/s   112.0 B/s</code></pre>
+<p>If you want to display the stats for the individual services in the stack, you can run:</p>
+<pre><code>$ amp stats --service
+Stats on services period=now-10m, No filter
+SERVICE         CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX
+pinger_pinger   0.00%   6.7 MB      5.9 GB   0.3%    0/s       0/s        214.0 B/s   112.0 B/s</code></pre>
+<p>If you want to display the stats for all the containers replicating the service, you can run:</p>
+<pre><code>$ amp stats --container
+Stats on containers period=now-10m, No filter
+CONTAINER              CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX      NET TX
+pinger_pinger_6bc02a   0.00%   1.2 MB      2.0 GB   0.1%    0/s       0/s        73.0 B/s   38.0 B/s
+pinger_pinger_6e8e55   0.00%   960.0 KB    2.0 GB   0.0%    0/s       0/s        73.0 B/s   38.0 B/s
+pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s        72.0 B/s   38.0 B/s</code></pre>
+<p>For more detailed examples of the querying and filtering options for stats, see the <a href="stats.md">stats documentation</a></p>
+<h4 id="organization-and-team-management">Organization and team management</h4>
+<p>Once you have signed up with <code>amp signup</code>, you can start creating organizations and within those organizations,
+you can add members or create teams of members.</p>
+<p>To create an organization:</p>
+<pre><code>$ amp org create
+organization name: org
+email: sample@org.com
+Organization has been created.</code></pre>
+<blockquote>
+<p>NOTE: The majority of the org and team commands are interactive, you can look at the org and team documentation or the <code>--help</code>
+option to see which commands take arguments or options.</p>
+</blockquote>
+<p>After creating an organization, you will be the owner of that organization and you can then add other users to that organization.</p>
+<p>With an organization created, you can &quot;log in&quot; to into that organization by switching to the context of the organization using:</p>
+<pre><code>$ amp org switch org
+You are now logged in as: org</code></pre>
+<p>Whilst logged in on behalf of the organization, you can deploy stacks within the context of that organization that cannot be accessed
+by users outside of that organization. In addition, by creating new teams within that organization, you can delegate resources in the
+form of stacks using the <code>amp team resource</code> commands.</p>
+<p>For more information on organization and team management, see the <a href="org.md">org documentation</a> and the <a href="team.md">team documentation</a></p>
+
+					</div>
+				</article>
+			
+		
+	</div>
+</div>
+
+
+
+		<footer>
+            <p>AMP is an open source project sponsored by <a href="https://www.axway.com">Axway</a>. It is licensed under <a href="https://github.com/appcelerator/amp/blob/master/LICENSE">Apache 2.0</a>.</p>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="/static/js/global.js"></script>
+		
+			<script src="/static/js/docs.js"></script>
+		
+	</body>
+</html>
