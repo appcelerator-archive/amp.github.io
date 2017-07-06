@@ -34,7 +34,8 @@ module.exports = function(grunt) {
 		},
 		'devops' : {
 			options : {
-				docs : docs('doc', 'devops')
+				docs : docs('doc', 'devops'),
+                guides: docs('guides', 'devops')
 			},
 			files: [{
 				expand : true,
