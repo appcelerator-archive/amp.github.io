@@ -2,8 +2,6 @@
 title: Self-signed certificates
 ---
 
-### Certificates
-
 The connection between the CLI and the ANP server is secured with TLS.
 
 When you run the AMP environment on your own machine, a self-signed certificate
