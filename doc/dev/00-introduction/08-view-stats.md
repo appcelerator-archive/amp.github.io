@@ -39,4 +39,3 @@ pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s       
 ```
 
 For more detailed examples of the querying and filtering options for stats, see the [stats documentation](stats.md)
-
