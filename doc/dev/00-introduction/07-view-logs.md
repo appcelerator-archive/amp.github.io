@@ -4,7 +4,7 @@ title: View logs
 
 #### Viewing and filtering logs
 
-The `amp logs` command allows for the querying and filtering of both realtime and historical logs.
+The `amp logs` command allows for the querying and filtering of both real-time and historical logs.
 
 To fetch the logs for your cluster:
 ```

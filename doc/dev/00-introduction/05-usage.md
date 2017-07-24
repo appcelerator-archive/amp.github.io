@@ -2,7 +2,7 @@
 title: Using AMP
 ---
 
-Run `amp --help` to get the CLI help menu for amp.
+Run `amp --help` to get the CLI help menu for AMP.
 
 ```
 $ amp --help
@@ -22,7 +22,6 @@ Options:
 
 Management Commands:
   cluster     Cluster management operations
-  org         Organization management operations
   password    Password management operations
   service     Service management operations
   stack       Stack management operations
@@ -57,7 +56,7 @@ The server location of our hosted AMP is `COMING SOON`. This location is current
 acting as a playground for anyone to signup and use as they like.
 
 The default value for the `--server|-s` option is `localhost:50101`, which points to a local
-cluster that can be deployed on your system's docker engine.
+cluster that can be deployed on your system's Docker engine.
 
 In order to make sure you're connected to the specified server when running commands,
 you can run the `amp version` command to test this.
