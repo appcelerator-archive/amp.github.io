@@ -2,7 +2,7 @@
 title: View metrics
 ---
 
-The `amp stats` command allows for the querying and filtering of realtime and historical statistics.
+The `amp stats` command allows for the querying and filtering of real-time and historical statistics.
 
 To fetch the stats of your cluster
 ```
