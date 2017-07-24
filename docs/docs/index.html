@@ -284,7 +284,7 @@ This option is used to define the target cluster you will be running your comman
 The target server is displayed at the top of every CLI command output.
 You can also add a default <code>--server|-s</code> value to your <code>amp.yml</code> config file.</p>
 <blockquote>
-<p>For more information on creating your configuration file, see the <a href="config.md">config documentation</a>.</p>
+<p>For more information on creating your configuration file, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/config.md">config documentation</a>.</p>
 </blockquote>
 <p>The server location of our hosted AMP is <code>COMING SOON</code>. This location is currently
 acting as a playground for anyone to signup and use as they like.</p>
@@ -313,7 +313,7 @@ Server:
 image using the command <code>make build-bootstrap</code> or <code>ampmake build-bootstrap</code> if your don&#39;t have the build tools,
 and then specify the <code>--tag=local</code> option to the CLI</em></p>
 </blockquote>
-<p>For more examples of cluster commands and deployment in different environments, see the <a href="cluster.md">cluster documentation</a>.</p>
+<p>For more examples of cluster commands and deployment in different environments, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/cluster.md">cluster documentation</a>.</p>
 <h3 id="signing-up-and-logging-in">Signing up and logging in</h3>
 <p>In order to be able to use AMP, you will need to signup for a user account, verify the account
 and login.</p>
@@ -339,8 +339,8 @@ be sent a link to verify your account with or you can verify your account with t
 <pre><code>$ amp login
 username: sample
 password: [password]</code></pre>
-<p>If you are having issues signing up or logging in, see the <a href="user.md">user documentation</a>.</p>
-<p>If you are have forgotten or want to change your password, see the <a href="password.md">password documentation</a></p>
+<p>If you are having issues signing up or logging in, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/user.md">user documentation</a>.</p>
+<p>If you are have forgotten or want to change your password, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/password.md">password documentation</a></p>
 <h3 id="ui-and-dashboard">UI and Dashboard</h3>
 <p>Along with our CLI, after deploying a cluster to your desired environment, you can get access to our Custom
 UI, a Grafana Dashboard and Kibana Dashboard.</p>
@@ -379,8 +379,8 @@ $ amp stack ls
 $ amp service logs pinger
 $ curl http://pinger.examples.local.appcelerator.io/ping</code></pre>
 <p>Or browse to: <a href="https://pinger.examples.local.appcelerator.io/ping">https://pinger.examples.local.appcelerator.io/ping</a>.</p>
-<p>For more information on what you can do with your stack when it is deployed, see the <a href="stack.md">stacks documentation</a>.</p>
-<p>For more information on inspecting and manipulating the services within your stack, see the <a href="service.md">service documentation</a></p>
+<p>For more information on what you can do with your stack when it is deployed, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/stack.md">stacks documentation</a>.</p>
+<p>For more information on inspecting and manipulating the services within your stack, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/service.md">service documentation</a></p>
 
 					</div>
 				</article>
@@ -416,7 +416,7 @@ you can run:</p>
 <pre><code>$ amp service logs pinger
 2017/06/29 17:59:32 listening on :3000
 ...</code></pre>
-<p>For more detailed examples of the querying and filtering options for logs, see the <a href="logs.md">logs documentation</a></p>
+<p>For more detailed examples of the querying and filtering options for logs, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/logs.md">logs documentation</a></p>
 
 					</div>
 				</article>
@@ -455,7 +455,7 @@ CONTAINER              CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE  
 pinger_pinger_6bc02a   0.00%   1.2 MB      2.0 GB   0.1%    0/s       0/s        73.0 B/s   38.0 B/s
 pinger_pinger_6e8e55   0.00%   960.0 KB    2.0 GB   0.0%    0/s       0/s        73.0 B/s   38.0 B/s
 pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s        72.0 B/s   38.0 B/s</code></pre>
-<p>For more detailed examples of the querying and filtering options for stats, see the <a href="stats.md">stats documentation</a></p>
+<p>For more detailed examples of the querying and filtering options for stats, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/stats.md">stats documentation</a></p>
 
 					</div>
 				</article>
@@ -471,50 +471,14 @@ pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s       
 					
 					<div class="docs-method-prose">
 						
-						<p>The <code>amp stats</code> command allows for the querying and filtering of realtime and historical statistics.</p>
-<p>To fetch the stats of your cluster</p>
-<pre><code>$ amp stats
-Stats on services period=now-10m, No filter
-SERVICE         CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX</code></pre>
-<p>Following on from the previous example of deploying a stack, if you want to display the stats of the <code>pinger</code> stack,
-you can run:</p>
-<pre><code>$ amp stats --stack
-Stats on stacks period=now-10m, No filter
-STACK     CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX
-pinger    0.00%   6.7 MB      5.9 GB   0.3%    0/s       0/s        212.0 B/s   112.0 B/s</code></pre>
-<p>If you want to display the stats for the individual services in the stack, you can run:</p>
-<pre><code>$ amp stats --service
-Stats on services period=now-10m, No filter
-SERVICE         CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX
-pinger_pinger   0.00%   6.7 MB      5.9 GB   0.3%    0/s       0/s        214.0 B/s   112.0 B/s</code></pre>
-<p>If you want to display the stats for all the containers replicating the service, you can run:</p>
-<pre><code>$ amp stats --container
-Stats on containers period=now-10m, No filter
-CONTAINER              CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX      NET TX
-pinger_pinger_6bc02a   0.00%   1.2 MB      2.0 GB   0.1%    0/s       0/s        73.0 B/s   38.0 B/s
-pinger_pinger_6e8e55   0.00%   960.0 KB    2.0 GB   0.0%    0/s       0/s        73.0 B/s   38.0 B/s
-pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s        72.0 B/s   38.0 B/s</code></pre>
-<p>For more detailed examples of the querying and filtering options for stats, see the <a href="stats.md">stats documentation</a></p>
-<h4 id="organization-and-team-management">Organization and team management</h4>
-<p>Once you have signed up with <code>amp signup</code>, you can start creating organizations and within those organizations,
-you can add members or create teams of members.</p>
-<p>To create an organization:</p>
-<pre><code>$ amp org create
-organization name: org
-email: sample@org.com
-Organization has been created.</code></pre>
-<blockquote>
-<p>NOTE: The majority of the org and team commands are interactive, you can look at the org and team documentation or the <code>--help</code>
-option to see which commands take arguments or options.</p>
-</blockquote>
-<p>After creating an organization, you will be the owner of that organization and you can then add other users to that organization.</p>
-<p>With an organization created, you can &quot;log in&quot; to into that organization by switching to the context of the organization using:</p>
-<pre><code>$ amp org switch org
-You are now logged in as: org</code></pre>
-<p>Whilst logged in on behalf of the organization, you can deploy stacks within the context of that organization that cannot be accessed
-by users outside of that organization. In addition, by creating new teams within that organization, you can delegate resources in the
-form of stacks using the <code>amp team resource</code> commands.</p>
-<p>For more information on organization and team management, see the <a href="org.md">org documentation</a> and the <a href="team.md">team documentation</a></p>
+						<h4 id="team-management">Team management</h4>
+<p>Once you have signed up with <code>amp signup</code>, you can start creating teams and add members.</p>
+<p>To create a team, just specify team name as an argument to the <code>team create</code> command:</p>
+<pre><code>$ amp team create team
+Team has been created.</code></pre>
+<p>After creating a team, you will be the owner of that team and you can then add other users to that team.</p>
+<p>In addition to creating new teams, you can delegate resources in the form of stacks using the <code>amp team resource</code> commands.</p>
+<p>For more information on team management, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/team.md">team documentation</a></p>
 
 					</div>
 				</article>
