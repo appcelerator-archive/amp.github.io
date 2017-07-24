@@ -20,5 +20,3 @@ Or browse to: https://pinger.examples.local.appcelerator.io/ping.
 For more information on what you can do with your stack when it is deployed, see the [stacks documentation](stack.md).
 
 For more information on inspecting and manipulating the services within your stack, see the [service documentation](service.md)
-
-

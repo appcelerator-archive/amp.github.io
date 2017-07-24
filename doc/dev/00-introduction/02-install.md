@@ -11,5 +11,3 @@ Place the `amp` binary from the release archive into some location in your syste
 ```
 $ sudo mv ./amp /usr/local/bin
 ```
-
-

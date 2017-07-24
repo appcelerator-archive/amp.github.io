@@ -149,4 +149,3 @@ hosted: https://dashboard.YOUR.DOMAIN
 local:  http://kibana.local.appcelerator.io
 
 hosted:  https://kibana.YOUR.DOMAIN
-

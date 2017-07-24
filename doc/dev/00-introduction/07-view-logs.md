@@ -34,4 +34,3 @@ $ amp service logs pinger
 ```
 
 For more detailed examples of the querying and filtering options for logs, see the [logs documentation](logs.md)
-

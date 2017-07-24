@@ -28,4 +28,3 @@ If you already have `gnu` installed on your system, you can instead run:
 $ make build-cli
 ```
 This will build your OS-specific CLI in `./bin` and it is much faster.
-
