@@ -38,4 +38,4 @@ pinger_pinger_6e8e55   0.00%   960.0 KB    2.0 GB   0.0%    0/s       0/s       
 pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s        72.0 B/s   38.0 B/s
 ```
 
-For more detailed examples of the querying and filtering options for stats, see the [stats documentation](stats.md)
+For more detailed examples of the querying and filtering options for stats, see the [stats documentation](https://github.com/appcelerator/amp/blob/master/docs/stats.md)

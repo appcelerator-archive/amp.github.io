@@ -33,4 +33,4 @@ $ amp service logs pinger
 ...
 ```
 
-For more detailed examples of the querying and filtering options for logs, see the [logs documentation](logs.md)
+For more detailed examples of the querying and filtering options for logs, see the [logs documentation](https://github.com/appcelerator/amp/blob/master/docs/logs.md)
