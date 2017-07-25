@@ -17,6 +17,6 @@ $ curl http://pinger.examples.local.appcelerator.io/ping
 ```
 Or browse to: https://pinger.examples.local.appcelerator.io/ping.
 
-For more information on what you can do with your stack when it is deployed, see the [stacks documentation](stack.md).
+For more information on what you can do with your stack when it is deployed, see the [stacks documentation](https://github.com/appcelerator/amp/blob/master/docs/stack.md).
 
-For more information on inspecting and manipulating the services within your stack, see the [service documentation](service.md)
+For more information on inspecting and manipulating the services within your stack, see the [service documentation](https://github.com/appcelerator/amp/blob/master/docs/service.md)

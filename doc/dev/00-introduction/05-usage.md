@@ -29,10 +29,11 @@ Management Commands:
   user        User management operations
 
 Commands:
-  config      Display configuration
+  completion  Output shell completion code for the specified shell (bash or zsh)
   login       Login to account
   logout      Logout of account
-  logs        Display filtered logs
+  logs        Display logs matching provided criteria
+  settings    Display AMP settings
   stats       Display statistics
   version     Show version information
   whoami      Display currently logged in account name
@@ -48,9 +49,9 @@ you will be prompted to provide them before the command runs*.
 When using `amp`, every command takes the `--server|-s` option.
 This option is used to define the target cluster you will be running your commands with.
 The target server is displayed at the top of every CLI command output.
-You can also add a default `--server|-s` value to your `amp.yml` config file.
+You can also add a default `--server|-s` value to your `amp.yml` settings file.
 
->For more information on creating your configuration file, see the [config documentation](config.md).
+>For more information on creating your AMP settings file, see the [config documentation](https://github.com/appcelerator/amp/blob/master/docs/config.md).
 
 The server location of our hosted AMP is `COMING SOON`. This location is currently
 acting as a playground for anyone to signup and use as they like.
@@ -65,15 +66,15 @@ you can run the `amp version` command to test this.
 $ amp -s your.server.com version
 [your.server.com:50101]
 Client:
- Version:       v0.12.0-dev
- Build:         fe0947b5
+ Version:       0.13.0
+ Build:         ad6404fd
  Server:        your.server.com:50101
  Go version:    go1.8.1
  OS/Arch:       darwin/amd64
 
 Server:
- Version:       v0.12.0-dev
- Build:         fd732802
+ Version:       0.13.0
+ Build:         ad6404fd
  Go version:    go1.8.1
  OS/Arch:       linux/amd64
 ```
@@ -87,7 +88,7 @@ $ amp cluster create
 image using the command `make build-bootstrap` or `ampmake build-bootstrap` if your don't have the build tools,
 and then specify the `--tag=local` option to the CLI*
 
-For more examples of cluster commands and deployment in different environments, see the [cluster documentation](cluster.md).
+For more examples of cluster commands and deployment in different environments, see the [cluster documentation](https://github.com/appcelerator/amp/blob/master/docs/cluster.md).
 
 ### Signing up and logging in
 
@@ -120,9 +121,9 @@ username: sample
 password: [password]
 ```
 
-If you are having issues signing up or logging in, see the [user documentation](user.md).
+If you are having issues signing up or logging in, see the [user documentation](https://github.com/appcelerator/amp/blob/master/docs/user.md).
 
-If you are have forgotten or want to change your password, see the [password documentation](password.md)
+If you are have forgotten or want to change your password, see the [password documentation](https://github.com/appcelerator/amp/blob/master/docs/password.md)
 
 ### UI and Dashboard
 

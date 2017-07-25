@@ -16,4 +16,4 @@ After creating a team, you will be the owner of that team and you can then add o
 
 In addition to creating new teams, you can delegate resources in the form of stacks using the `amp team resource` commands.
 
-For more information on team management, see the [team documentation](team.md)
+For more information on team management, see the [team documentation](https://github.com/appcelerator/amp/blob/master/docs/team.md)
