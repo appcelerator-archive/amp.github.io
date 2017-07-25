@@ -188,7 +188,7 @@ Make sure you check the &quot;What to know before you install&quot; section on t
 					
 					<div class="docs-method-prose">
 						
-						<p>The connection between the CLI and the ANP server is secured with TLS.</p>
+						<p>The connection between the CLI and the AMP server is secured with TLS.</p>
 <p>When you run the AMP environment on your own machine, a self-signed certificate
 is automatically generated. You will need to use the <code>-k</code> option or add the
 CA to your local key store.</p>
@@ -239,10 +239,10 @@ $ export PATH=bin/{YourOS}/amd64:$PATH</code></pre>
 					
 					<div class="docs-method-prose">
 						
-						<p>Run <code>amp --help</code> to get the CLI help menu for amp.</p>
+						<p>Run <code>amp --help</code> to get the CLI help menu for AMP.</p>
 <pre><code>$ amp --help
 
-Usage:    amp [OPTIONS] COMMAND 
+Usage:	amp [OPTIONS] COMMAND
 
 Deploy, manage, and monitor container stacks.
 
@@ -251,13 +251,12 @@ amp version
 
 Options:
   -h, --help            Print usage
-  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -k, --insecure        Control whether amp verifies the server's certificate chain and host name
   -s, --server string   Specify server (host:port)
   -v, --version         Print version information and quit
 
 Management Commands:
   cluster     Cluster management operations
-  org         Organization management operations
   password    Password management operations
   service     Service management operations
   stack       Stack management operations
@@ -265,15 +264,16 @@ Management Commands:
   user        User management operations
 
 Commands:
-  config      Display configuration
+  completion  Output shell completion code for the specified shell (bash or zsh)
   login       Login to account
   logout      Logout of account
-  logs        Display filtered logs
+  logs        Display logs matching provided criteria
+  settings    Display AMP settings
   stats       Display statistics
   version     Show version information
   whoami      Display currently logged in account name
 
-Run &#39;amp COMMAND --help&#39; for more information on a command.</code></pre>
+Run 'amp COMMAND --help' for more information on a command.</code></pre>
 <blockquote>
 <p><em>A large number of AMP commands are interactive, so if necessary options are not provided
 you will be prompted to provide them before the command runs</em>.</p>
@@ -282,28 +282,28 @@ you will be prompted to provide them before the command runs</em>.</p>
 <p>When using <code>amp</code>, every command takes the <code>--server|-s</code> option.
 This option is used to define the target cluster you will be running your commands with.
 The target server is displayed at the top of every CLI command output.
-You can also add a default <code>--server|-s</code> value to your <code>amp.yml</code> config file.</p>
+You can also add a default <code>--server|-s</code> value to your <code>amp.yml</code> settings file.</p>
 <blockquote>
-<p>For more information on creating your configuration file, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/config.md">config documentation</a>.</p>
+<p>For more information on creating your AMP settings file, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/settings.md">settings documentation</a>.</p>
 </blockquote>
 <p>The server location of our hosted AMP is <code>COMING SOON</code>. This location is currently
 acting as a playground for anyone to signup and use as they like.</p>
 <p>The default value for the <code>--server|-s</code> option is <code>localhost:50101</code>, which points to a local
-cluster that can be deployed on your system&#39;s docker engine.</p>
+cluster that can be deployed on your system&#39;s Docker engine.</p>
 <p>In order to make sure you&#39;re connected to the specified server when running commands,
 you can run the <code>amp version</code> command to test this.</p>
 <pre><code>$ amp -s your.server.com version
 [your.server.com:50101]
 Client:
- Version:       v0.12.0-dev
- Build:         fe0947b5
+ Version:       0.13.0
+ Build:         ad6404fd
  Server:        your.server.com:50101
  Go version:    go1.8.1
  OS/Arch:       darwin/amd64
 
 Server:
- Version:       v0.12.0-dev
- Build:         fd732802
+ Version:       0.13.0
+ Build:         ad6404fd
  Go version:    go1.8.1
  OS/Arch:       linux/amd64</code></pre>
 <h4 id="creating-a-local-amp-cluster">Creating a local AMP cluster</h4>
@@ -397,7 +397,7 @@ $ curl http://pinger.examples.local.appcelerator.io/ping</code></pre>
 					<div class="docs-method-prose">
 						
 						<h4 id="viewing-and-filtering-logs">Viewing and filtering logs</h4>
-<p>The <code>amp logs</code> command allows for the querying and filtering of both realtime and historical logs.</p>
+<p>The <code>amp logs</code> command allows for the querying and filtering of both real-time and historical logs.</p>
 <p>To fetch the logs for your cluster:</p>
 <pre><code>$ amp logs
 ...
@@ -432,7 +432,7 @@ you can run:</p>
 					
 					<div class="docs-method-prose">
 						
-						<p>The <code>amp stats</code> command allows for the querying and filtering of realtime and historical statistics.</p>
+						<p>The <code>amp stats</code> command allows for the querying and filtering of real-time and historical statistics.</p>
 <p>To fetch the stats of your cluster</p>
 <pre><code>$ amp stats
 Stats on services period=now-10m, No filter
