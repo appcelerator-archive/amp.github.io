@@ -242,7 +242,7 @@ $ export PATH=bin/{YourOS}/amd64:$PATH</code></pre>
 						<p>Run <code>amp --help</code> to get the CLI help menu for AMP.</p>
 <pre><code>$ amp --help
 
-Usage:	amp [OPTIONS] COMMAND
+Usage:    amp [OPTIONS] COMMAND 
 
 Deploy, manage, and monitor container stacks.
 
@@ -251,7 +251,7 @@ amp version
 
 Options:
   -h, --help            Print usage
-  -k, --insecure        Control whether amp verifies the server's certificate chain and host name
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
   -s, --server string   Specify server (host:port)
   -v, --version         Print version information and quit
 
@@ -264,16 +264,15 @@ Management Commands:
   user        User management operations
 
 Commands:
-  completion  Output shell completion code for the specified shell (bash or zsh)
+  config      Display configuration
   login       Login to account
   logout      Logout of account
-  logs        Display logs matching provided criteria
-  settings    Display AMP settings
+  logs        Display filtered logs
   stats       Display statistics
   version     Show version information
   whoami      Display currently logged in account name
 
-Run 'amp COMMAND --help' for more information on a command.</code></pre>
+Run &#39;amp COMMAND --help&#39; for more information on a command.</code></pre>
 <blockquote>
 <p><em>A large number of AMP commands are interactive, so if necessary options are not provided
 you will be prompted to provide them before the command runs</em>.</p>
@@ -282,9 +281,9 @@ you will be prompted to provide them before the command runs</em>.</p>
 <p>When using <code>amp</code>, every command takes the <code>--server|-s</code> option.
 This option is used to define the target cluster you will be running your commands with.
 The target server is displayed at the top of every CLI command output.
-You can also add a default <code>--server|-s</code> value to your <code>amp.yml</code> settings file.</p>
+You can also add a default <code>--server|-s</code> value to your <code>amp.yml</code> config file.</p>
 <blockquote>
-<p>For more information on creating your AMP settings file, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/settings.md">settings documentation</a>.</p>
+<p>For more information on creating your configuration file, see the <a href="config.md">config documentation</a>.</p>
 </blockquote>
 <p>The server location of our hosted AMP is <code>COMING SOON</code>. This location is currently
 acting as a playground for anyone to signup and use as they like.</p>
@@ -295,15 +294,15 @@ you can run the <code>amp version</code> command to test this.</p>
 <pre><code>$ amp -s your.server.com version
 [your.server.com:50101]
 Client:
- Version:       0.13.0
- Build:         ad6404fd
+ Version:       v0.12.0-dev
+ Build:         fe0947b5
  Server:        your.server.com:50101
  Go version:    go1.8.1
  OS/Arch:       darwin/amd64
 
 Server:
- Version:       0.13.0
- Build:         ad6404fd
+ Version:       v0.12.0-dev
+ Build:         fd732802
  Go version:    go1.8.1
  OS/Arch:       linux/amd64</code></pre>
 <h4 id="creating-a-local-amp-cluster">Creating a local AMP cluster</h4>
@@ -313,7 +312,7 @@ Server:
 image using the command <code>make build-bootstrap</code> or <code>ampmake build-bootstrap</code> if your don&#39;t have the build tools,
 and then specify the <code>--tag=local</code> option to the CLI</em></p>
 </blockquote>
-<p>For more examples of cluster commands and deployment in different environments, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/cluster.md">cluster documentation</a>.</p>
+<p>For more examples of cluster commands and deployment in different environments, see the <a href="cluster.md">cluster documentation</a>.</p>
 <h3 id="signing-up-and-logging-in">Signing up and logging in</h3>
 <p>In order to be able to use AMP, you will need to signup for a user account, verify the account
 and login.</p>
@@ -339,8 +338,8 @@ be sent a link to verify your account with or you can verify your account with t
 <pre><code>$ amp login
 username: sample
 password: [password]</code></pre>
-<p>If you are having issues signing up or logging in, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/user.md">user documentation</a>.</p>
-<p>If you are have forgotten or want to change your password, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/password.md">password documentation</a></p>
+<p>If you are having issues signing up or logging in, see the <a href="user.md">user documentation</a>.</p>
+<p>If you are have forgotten or want to change your password, see the <a href="password.md">password documentation</a></p>
 <h3 id="ui-and-dashboard">UI and Dashboard</h3>
 <p>Along with our CLI, after deploying a cluster to your desired environment, you can get access to our Custom
 UI, a Grafana Dashboard and Kibana Dashboard.</p>
@@ -379,8 +378,8 @@ $ amp stack ls
 $ amp service logs pinger
 $ curl http://pinger.examples.local.appcelerator.io/ping</code></pre>
 <p>Or browse to: <a href="https://pinger.examples.local.appcelerator.io/ping">https://pinger.examples.local.appcelerator.io/ping</a>.</p>
-<p>For more information on what you can do with your stack when it is deployed, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/stack.md">stacks documentation</a>.</p>
-<p>For more information on inspecting and manipulating the services within your stack, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/service.md">service documentation</a></p>
+<p>For more information on what you can do with your stack when it is deployed, see the <a href="stack.md">stacks documentation</a>.</p>
+<p>For more information on inspecting and manipulating the services within your stack, see the <a href="service.md">service documentation</a></p>
 
 					</div>
 				</article>
@@ -416,7 +415,7 @@ you can run:</p>
 <pre><code>$ amp service logs pinger
 2017/06/29 17:59:32 listening on :3000
 ...</code></pre>
-<p>For more detailed examples of the querying and filtering options for logs, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/logs.md">logs documentation</a></p>
+<p>For more detailed examples of the querying and filtering options for logs, see the <a href="logs.md">logs documentation</a></p>
 
 					</div>
 				</article>
@@ -455,7 +454,7 @@ CONTAINER              CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE  
 pinger_pinger_6bc02a   0.00%   1.2 MB      2.0 GB   0.1%    0/s       0/s        73.0 B/s   38.0 B/s
 pinger_pinger_6e8e55   0.00%   960.0 KB    2.0 GB   0.0%    0/s       0/s        73.0 B/s   38.0 B/s
 pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s        72.0 B/s   38.0 B/s</code></pre>
-<p>For more detailed examples of the querying and filtering options for stats, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/stats.md">stats documentation</a></p>
+<p>For more detailed examples of the querying and filtering options for stats, see the <a href="stats.md">stats documentation</a></p>
 
 					</div>
 				</article>
@@ -478,7 +477,7 @@ pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s       
 Team has been created.</code></pre>
 <p>After creating a team, you will be the owner of that team and you can then add other users to that team.</p>
 <p>In addition to creating new teams, you can delegate resources in the form of stacks using the <code>amp team resource</code> commands.</p>
-<p>For more information on team management, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/team.md">team documentation</a></p>
+<p>For more information on team management, see the <a href="team.md">team documentation</a></p>
 
 					</div>
 				</article>
