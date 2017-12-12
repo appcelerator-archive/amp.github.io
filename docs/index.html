@@ -73,7 +73,7 @@
 			AMP
 		</a>
 		<a class="builds-button builds-button-gzipped" href="https://github.com/appcelerator/amp/releases">
-			v0.16.0
+			v0.17.0
 		</a>
 	</div>
     <!--
@@ -94,11 +94,11 @@ bower install moment --save <span class="comment"># bower (deprecated)</span>
 
 <ul>
 <li>Use Docker Compose v3 <a href="https://docs.docker.com/compose/compose-file/">stackfiles</a> to deploy your stacks</li>
-<li>Account management support for users, organizations and teams with role-based access controls</li>
-<li>Logs and metrics realtime filtered feeds and historical query support</li>
+<li>Account management support for users and teams with role-based access controls</li>
+<li>Logs and metrics with real-time filtered feeds and historical query support</li>
 </ul>
 <pre><code class="language-sh">    $ amp
-    [localhost:50101]
+    [127.0.0.1:50101]
 
     Usage:	amp [OPTIONS] COMMAND
 
@@ -109,31 +109,32 @@ bower install moment --save <span class="comment"># bower (deprecated)</span>
 
     Options:
       -h, --help            Print usage
-      -k, --insecure        Control whether amp verifies the server's certificate chain and
-                            host name
+      -k, --insecure        Control whether amp verifies the server's certificate chain and host name
       -s, --server string   Specify server (host:port)
       -v, --version         Print version information and quit
 
     Management Commands:
-      cluster     Cluster management operations
-      config      Manage config
-      password    Password management operations
-      secret      Manage secret
-      service     Service management operations
-      stack       Stack management operations
-      team        Team management operations
-      user        User management operations
- 
+      cluster      Cluster management operations
+      config       Configuration management operations
+      object-store Object storage operations
+      password     Password management operations
+      secret       Secret management operations
+      service      Service management operations
+      stack        Stack management operations
+      team         Team management operations
+      user         User management operations
+
     Commands:
-      completion  Output shell completion code for the specified shell (bash or zsh)
-      login       Login to account
-      logout      Logout of account
-      logs        Display logs matching provided criteria
-      settings    Display AMP settings
-      version     Show version information
-      whoami      Display currently logged in account name
+      completion   Output shell completion code for the specified shell (bash or zsh)
+      login        Login to account
+      logout       Logout of account
+      logs         Display logs matching provided criteria
+      settings     Display AMP settings
+      version      Show version information
+      whoami       Display currently logged in account name
 
     Run 'amp COMMAND --help' for more information on a command.</code></pre>
+
 
 <div class="locales">
 	

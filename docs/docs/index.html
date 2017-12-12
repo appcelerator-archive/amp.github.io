@@ -1,497 +1,1663 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8" />
+<head>
+    <meta charset="utf-8" />
 
-		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/static/css/style.css" />
-		<link rel="shortcut icon" href="/static/img/dev-favicon.png" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="shortcut icon" href="/static/img/dev-favicon.png" />
 
-		<title>AMP | Docs</title>
-		<script>
+    <title>AMP | Docs</title>
+    <script>
 			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
 			ga('create', 'UA-10641787-5', 'auto');
 			ga('send', 'pageview');
 		</script>
-		<script async src='https://www.google-analytics.com/analytics.js'></script>
-	</head>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
 
-	<body class="is-dev">
-		<nav class="nav">
-			<div class="centered">
-				<div class="nav-projects">
-					<a class="nav-project nav-project-dev active" href="/">
-						<svg width="40px" height="40px" viewBox="0 0 40 40">
-                            <ellipse stroke-width="3" cx="20" cy="20" rx="18.5" ry="18.5" fill="0" stroke="#000" />
-                            <path fill-rule="evenodd" d="M4.98917024,14.4489557 C4.34944108,16.1782522 4,18.0483179 4,20 C4,28.836556 11.163444,36 20,36 C25.3372103,36 30.0640585,33.3867291 32.9708034,29.3699284 L32.9708034,29.3699284 C32.7542032,29.1158875 32.5851628,28.8136799 32.5213775,28.5419031 L31.2169086,22.9838131 C31.1059526,22.5110509 30.6116318,22.1192596 30.1152853,22.1192596 L28.4921437,22.1192596 C27.9858118,22.1192596 27.3609962,21.7891428 27.0742761,21.3819231 L26.5647528,20.6582629 C25.7154881,19.4520786 25.8505167,17.5995152 26.8651421,16.5187344 L26.9854581,16.3905737 C27.318883,16.0354089 27.9695174,15.6094255 28.4334461,15.4446996 L29.3188401,15.1303252 C29.7803195,14.966469 30.5349459,14.9655993 30.9988746,15.1303252 L31.8842686,15.4446996 C32.3457481,15.6085558 33.1107334,15.8458733 33.5874405,15.9728206 L35.6191135,16.513856 C35.4978108,15.9679684 35.3486212,15.4325805 35.1731165,14.9092644 C34.3263749,14.7238868 33.4055455,14.2746017 32.8663979,13.7497894 L32.3015162,13.1999272 L30.4205895,13.1999271 C29.9369463,13.1999271 29.3014167,13.5302589 29.0223398,13.9377438 L28.6896027,14.4235789 C28.1260613,15.2464153 27.4185905,15.1412987 27.0980851,14.2053481 L27.0412779,14.0394576 C26.882355,13.5753657 27.1532065,13.199927 27.6459111,13.199927 L27.7109116,13.199927 C28.2108557,13.199927 28.6030323,12.796967 28.6030323,12.2998905 C28.6030324,11.7993486 29.0024484,11.399854 29.4951531,11.399854 L30.4522743,11.399854 L30.7448301,11.1150769 C31.0843394,10.7845948 31.0209719,10.3265877 30.5819181,10.1128978 L30.3226304,9.98670097 C29.8842057,9.77331723 29.8835766,9.42655123 30.3226304,9.21286132 L30.5819181,9.08666449 C30.8796701,8.94174691 31.4270561,9.05187418 31.74767,9.13746427 L31.74767,9.13746427 C29.354055,6.5500601 26.1162974,4.75498325 22.4719557,4.1897922 L22.4719557,4.1897922 L23.5257222,5.21678951 C24.2305071,5.90367045 24.0320251,6.65048619 23.0799479,6.88245898 L21.4350099,7.28324666 L20.1865042,8.50003612 C19.4817194,9.18691704 18.4903848,9.06670377 17.9747489,8.2291421 L17.3154121,7.15816288 C16.7989905,6.31932509 17.052872,5.20558795 17.8807174,4.66771105 L17.4094436,4.97391227 C18.1837126,4.47084565 19.4969845,4.06343412 20.4690548,4.00674356 C20.3132511,4.0022581 20.1568893,4 20,4 C16.3409492,4 12.9687755,5.22826668 10.2732905,7.29498839 L9.34598541,8.7 C9.34598541,8.7 11.1732265,9.31523437 11.1732265,9.31523437 C11.6403222,9.47250609 12.1428675,9.22457657 12.3008953,8.74570313 L12.6280585,7.75429687 C12.7837571,7.28248174 13.2647344,7.07917156 13.7009406,7.29947834 L14.8796059,7.89476545 C15.7601466,8.33948421 16.7269068,9.46648951 17.0331889,10.3946197 L17.0830463,10.5457031 C17.2387449,11.0175183 16.9561285,11.4 16.4656183,11.4 L13.8009733,11.4 L12.0189781,13.2 L12.0189781,15.015919 C12.0189781,15.5041835 11.7405414,15.61875 11.3957227,15.2704473 L10.236983,14.1 L9.25216787,14.5973827 C8.8118975,14.8197421 8.45498784,15.3994783 8.45498784,15.9 C8.45498784,16.3970563 8.80456327,17.0118645 9.2107158,17.2580182 L12.9099757,19.5 L13.8947908,19.0026173 C14.3350612,18.7802579 15.0162561,18.8183745 15.4320035,19.0983398 L19.7477607,22.0045816 C21.3842844,23.1066207 21.4906005,25.0341584 19.9878775,26.3076091 L16.4715636,29.2874348 C16.0984226,29.6036452 15.5824366,30.1960211 15.3130082,30.6200946 L13.8009729,33 C13.3088887,33 12.995925,32.6093202 13.1006804,32.1331581 L14.3096882,26.6376532 C14.520817,25.6779738 13.9707442,24.5357431 13.0976108,24.0947654 L12.7223406,23.9052346 C11.8417999,23.4605158 11.4800454,22.3887558 11.9199672,21.5000227 L12.9099757,19.5 L8.41107755,17.9852154 C7.94324417,17.8276953 7.31902279,17.3906968 7.00711679,16.996875 L4.98917024,14.4489557 Z"></path>
-						</svg>
-						For<br/>Devs
-					</a>
-					<a class="nav-project nav-project-devops " href="/devops/">
-						<svg width="40px" height="40px" viewBox="0 0 40 40">
-							<ellipse stroke-width="3" cx="20" cy="20" rx="18.5" ry="18.5" fill="0" stroke="#000" />
-							<path fill-rule="evenodd" d="M4.98917024,14.4489557 C4.34944108,16.1782522 4,18.0483179 4,20 C4,28.836556 11.163444,36 20,36 C25.3372103,36 30.0640585,33.3867291 32.9708034,29.3699284 L32.9708034,29.3699284 C32.7542032,29.1158875 32.5851628,28.8136799 32.5213775,28.5419031 L31.2169086,22.9838131 C31.1059526,22.5110509 30.6116318,22.1192596 30.1152853,22.1192596 L28.4921437,22.1192596 C27.9858118,22.1192596 27.3609962,21.7891428 27.0742761,21.3819231 L26.5647528,20.6582629 C25.7154881,19.4520786 25.8505167,17.5995152 26.8651421,16.5187344 L26.9854581,16.3905737 C27.318883,16.0354089 27.9695174,15.6094255 28.4334461,15.4446996 L29.3188401,15.1303252 C29.7803195,14.966469 30.5349459,14.9655993 30.9988746,15.1303252 L31.8842686,15.4446996 C32.3457481,15.6085558 33.1107334,15.8458733 33.5874405,15.9728206 L35.6191135,16.513856 C35.4978108,15.9679684 35.3486212,15.4325805 35.1731165,14.9092644 C34.3263749,14.7238868 33.4055455,14.2746017 32.8663979,13.7497894 L32.3015162,13.1999272 L30.4205895,13.1999271 C29.9369463,13.1999271 29.3014167,13.5302589 29.0223398,13.9377438 L28.6896027,14.4235789 C28.1260613,15.2464153 27.4185905,15.1412987 27.0980851,14.2053481 L27.0412779,14.0394576 C26.882355,13.5753657 27.1532065,13.199927 27.6459111,13.199927 L27.7109116,13.199927 C28.2108557,13.199927 28.6030323,12.796967 28.6030323,12.2998905 C28.6030324,11.7993486 29.0024484,11.399854 29.4951531,11.399854 L30.4522743,11.399854 L30.7448301,11.1150769 C31.0843394,10.7845948 31.0209719,10.3265877 30.5819181,10.1128978 L30.3226304,9.98670097 C29.8842057,9.77331723 29.8835766,9.42655123 30.3226304,9.21286132 L30.5819181,9.08666449 C30.8796701,8.94174691 31.4270561,9.05187418 31.74767,9.13746427 L31.74767,9.13746427 C29.354055,6.5500601 26.1162974,4.75498325 22.4719557,4.1897922 L22.4719557,4.1897922 L23.5257222,5.21678951 C24.2305071,5.90367045 24.0320251,6.65048619 23.0799479,6.88245898 L21.4350099,7.28324666 L20.1865042,8.50003612 C19.4817194,9.18691704 18.4903848,9.06670377 17.9747489,8.2291421 L17.3154121,7.15816288 C16.7989905,6.31932509 17.052872,5.20558795 17.8807174,4.66771105 L17.4094436,4.97391227 C18.1837126,4.47084565 19.4969845,4.06343412 20.4690548,4.00674356 C20.3132511,4.0022581 20.1568893,4 20,4 C16.3409492,4 12.9687755,5.22826668 10.2732905,7.29498839 L9.34598541,8.7 C9.34598541,8.7 11.1732265,9.31523437 11.1732265,9.31523437 C11.6403222,9.47250609 12.1428675,9.22457657 12.3008953,8.74570313 L12.6280585,7.75429687 C12.7837571,7.28248174 13.2647344,7.07917156 13.7009406,7.29947834 L14.8796059,7.89476545 C15.7601466,8.33948421 16.7269068,9.46648951 17.0331889,10.3946197 L17.0830463,10.5457031 C17.2387449,11.0175183 16.9561285,11.4 16.4656183,11.4 L13.8009733,11.4 L12.0189781,13.2 L12.0189781,15.015919 C12.0189781,15.5041835 11.7405414,15.61875 11.3957227,15.2704473 L10.236983,14.1 L9.25216787,14.5973827 C8.8118975,14.8197421 8.45498784,15.3994783 8.45498784,15.9 C8.45498784,16.3970563 8.80456327,17.0118645 9.2107158,17.2580182 L12.9099757,19.5 L13.8947908,19.0026173 C14.3350612,18.7802579 15.0162561,18.8183745 15.4320035,19.0983398 L19.7477607,22.0045816 C21.3842844,23.1066207 21.4906005,25.0341584 19.9878775,26.3076091 L16.4715636,29.2874348 C16.0984226,29.6036452 15.5824366,30.1960211 15.3130082,30.6200946 L13.8009729,33 C13.3088887,33 12.995925,32.6093202 13.1006804,32.1331581 L14.3096882,26.6376532 C14.520817,25.6779738 13.9707442,24.5357431 13.0976108,24.0947654 L12.7223406,23.9052346 C11.8417999,23.4605158 11.4800454,22.3887558 11.9199672,21.5000227 L12.9099757,19.5 L8.41107755,17.9852154 C7.94324417,17.8276953 7.31902279,17.3906968 7.00711679,16.996875 L4.98917024,14.4489557 Z"></path>
-						</svg>
-						For<br/>Devops
-					</a>
-				</div>
-				<div class="nav-pages">
-					
-						<a href="../" >Home</a>
-					
-						<a href="." class="active">Docs</a>
-					
-						<a href="../guides/" >Guides</a>
-					
-					<!--<a href="https://github.com/appcelerator/dev/">GitHub</a>-->
-                    <a href="https://github.com/appcelerator/amp/">GitHub</a>
-				</div>
-			</div>
-		</nav>
+<body class="is-dev">
+<nav class="nav">
+    <div class="centered">
+        <div class="nav-projects">
+            <a class="nav-project nav-project-dev active" href="/">
+                <svg width="40px" height="40px" viewBox="0 0 40 40">
+                    <ellipse stroke-width="3" cx="20" cy="20" rx="18.5" ry="18.5" fill="0" stroke="#000" />
+                    <path fill-rule="evenodd" d="M4.98917024,14.4489557 C4.34944108,16.1782522 4,18.0483179 4,20 C4,28.836556 11.163444,36 20,36 C25.3372103,36 30.0640585,33.3867291 32.9708034,29.3699284 L32.9708034,29.3699284 C32.7542032,29.1158875 32.5851628,28.8136799 32.5213775,28.5419031 L31.2169086,22.9838131 C31.1059526,22.5110509 30.6116318,22.1192596 30.1152853,22.1192596 L28.4921437,22.1192596 C27.9858118,22.1192596 27.3609962,21.7891428 27.0742761,21.3819231 L26.5647528,20.6582629 C25.7154881,19.4520786 25.8505167,17.5995152 26.8651421,16.5187344 L26.9854581,16.3905737 C27.318883,16.0354089 27.9695174,15.6094255 28.4334461,15.4446996 L29.3188401,15.1303252 C29.7803195,14.966469 30.5349459,14.9655993 30.9988746,15.1303252 L31.8842686,15.4446996 C32.3457481,15.6085558 33.1107334,15.8458733 33.5874405,15.9728206 L35.6191135,16.513856 C35.4978108,15.9679684 35.3486212,15.4325805 35.1731165,14.9092644 C34.3263749,14.7238868 33.4055455,14.2746017 32.8663979,13.7497894 L32.3015162,13.1999272 L30.4205895,13.1999271 C29.9369463,13.1999271 29.3014167,13.5302589 29.0223398,13.9377438 L28.6896027,14.4235789 C28.1260613,15.2464153 27.4185905,15.1412987 27.0980851,14.2053481 L27.0412779,14.0394576 C26.882355,13.5753657 27.1532065,13.199927 27.6459111,13.199927 L27.7109116,13.199927 C28.2108557,13.199927 28.6030323,12.796967 28.6030323,12.2998905 C28.6030324,11.7993486 29.0024484,11.399854 29.4951531,11.399854 L30.4522743,11.399854 L30.7448301,11.1150769 C31.0843394,10.7845948 31.0209719,10.3265877 30.5819181,10.1128978 L30.3226304,9.98670097 C29.8842057,9.77331723 29.8835766,9.42655123 30.3226304,9.21286132 L30.5819181,9.08666449 C30.8796701,8.94174691 31.4270561,9.05187418 31.74767,9.13746427 L31.74767,9.13746427 C29.354055,6.5500601 26.1162974,4.75498325 22.4719557,4.1897922 L22.4719557,4.1897922 L23.5257222,5.21678951 C24.2305071,5.90367045 24.0320251,6.65048619 23.0799479,6.88245898 L21.4350099,7.28324666 L20.1865042,8.50003612 C19.4817194,9.18691704 18.4903848,9.06670377 17.9747489,8.2291421 L17.3154121,7.15816288 C16.7989905,6.31932509 17.052872,5.20558795 17.8807174,4.66771105 L17.4094436,4.97391227 C18.1837126,4.47084565 19.4969845,4.06343412 20.4690548,4.00674356 C20.3132511,4.0022581 20.1568893,4 20,4 C16.3409492,4 12.9687755,5.22826668 10.2732905,7.29498839 L9.34598541,8.7 C9.34598541,8.7 11.1732265,9.31523437 11.1732265,9.31523437 C11.6403222,9.47250609 12.1428675,9.22457657 12.3008953,8.74570313 L12.6280585,7.75429687 C12.7837571,7.28248174 13.2647344,7.07917156 13.7009406,7.29947834 L14.8796059,7.89476545 C15.7601466,8.33948421 16.7269068,9.46648951 17.0331889,10.3946197 L17.0830463,10.5457031 C17.2387449,11.0175183 16.9561285,11.4 16.4656183,11.4 L13.8009733,11.4 L12.0189781,13.2 L12.0189781,15.015919 C12.0189781,15.5041835 11.7405414,15.61875 11.3957227,15.2704473 L10.236983,14.1 L9.25216787,14.5973827 C8.8118975,14.8197421 8.45498784,15.3994783 8.45498784,15.9 C8.45498784,16.3970563 8.80456327,17.0118645 9.2107158,17.2580182 L12.9099757,19.5 L13.8947908,19.0026173 C14.3350612,18.7802579 15.0162561,18.8183745 15.4320035,19.0983398 L19.7477607,22.0045816 C21.3842844,23.1066207 21.4906005,25.0341584 19.9878775,26.3076091 L16.4715636,29.2874348 C16.0984226,29.6036452 15.5824366,30.1960211 15.3130082,30.6200946 L13.8009729,33 C13.3088887,33 12.995925,32.6093202 13.1006804,32.1331581 L14.3096882,26.6376532 C14.520817,25.6779738 13.9707442,24.5357431 13.0976108,24.0947654 L12.7223406,23.9052346 C11.8417999,23.4605158 11.4800454,22.3887558 11.9199672,21.5000227 L12.9099757,19.5 L8.41107755,17.9852154 C7.94324417,17.8276953 7.31902279,17.3906968 7.00711679,16.996875 L4.98917024,14.4489557 Z"></path>
+                </svg>
+                For<br/>Devs
+            </a>
+            <a class="nav-project nav-project-devops " href="/devops/">
+                <svg width="40px" height="40px" viewBox="0 0 40 40">
+                    <ellipse stroke-width="3" cx="20" cy="20" rx="18.5" ry="18.5" fill="0" stroke="#000" />
+                    <path fill-rule="evenodd" d="M4.98917024,14.4489557 C4.34944108,16.1782522 4,18.0483179 4,20 C4,28.836556 11.163444,36 20,36 C25.3372103,36 30.0640585,33.3867291 32.9708034,29.3699284 L32.9708034,29.3699284 C32.7542032,29.1158875 32.5851628,28.8136799 32.5213775,28.5419031 L31.2169086,22.9838131 C31.1059526,22.5110509 30.6116318,22.1192596 30.1152853,22.1192596 L28.4921437,22.1192596 C27.9858118,22.1192596 27.3609962,21.7891428 27.0742761,21.3819231 L26.5647528,20.6582629 C25.7154881,19.4520786 25.8505167,17.5995152 26.8651421,16.5187344 L26.9854581,16.3905737 C27.318883,16.0354089 27.9695174,15.6094255 28.4334461,15.4446996 L29.3188401,15.1303252 C29.7803195,14.966469 30.5349459,14.9655993 30.9988746,15.1303252 L31.8842686,15.4446996 C32.3457481,15.6085558 33.1107334,15.8458733 33.5874405,15.9728206 L35.6191135,16.513856 C35.4978108,15.9679684 35.3486212,15.4325805 35.1731165,14.9092644 C34.3263749,14.7238868 33.4055455,14.2746017 32.8663979,13.7497894 L32.3015162,13.1999272 L30.4205895,13.1999271 C29.9369463,13.1999271 29.3014167,13.5302589 29.0223398,13.9377438 L28.6896027,14.4235789 C28.1260613,15.2464153 27.4185905,15.1412987 27.0980851,14.2053481 L27.0412779,14.0394576 C26.882355,13.5753657 27.1532065,13.199927 27.6459111,13.199927 L27.7109116,13.199927 C28.2108557,13.199927 28.6030323,12.796967 28.6030323,12.2998905 C28.6030324,11.7993486 29.0024484,11.399854 29.4951531,11.399854 L30.4522743,11.399854 L30.7448301,11.1150769 C31.0843394,10.7845948 31.0209719,10.3265877 30.5819181,10.1128978 L30.3226304,9.98670097 C29.8842057,9.77331723 29.8835766,9.42655123 30.3226304,9.21286132 L30.5819181,9.08666449 C30.8796701,8.94174691 31.4270561,9.05187418 31.74767,9.13746427 L31.74767,9.13746427 C29.354055,6.5500601 26.1162974,4.75498325 22.4719557,4.1897922 L22.4719557,4.1897922 L23.5257222,5.21678951 C24.2305071,5.90367045 24.0320251,6.65048619 23.0799479,6.88245898 L21.4350099,7.28324666 L20.1865042,8.50003612 C19.4817194,9.18691704 18.4903848,9.06670377 17.9747489,8.2291421 L17.3154121,7.15816288 C16.7989905,6.31932509 17.052872,5.20558795 17.8807174,4.66771105 L17.4094436,4.97391227 C18.1837126,4.47084565 19.4969845,4.06343412 20.4690548,4.00674356 C20.3132511,4.0022581 20.1568893,4 20,4 C16.3409492,4 12.9687755,5.22826668 10.2732905,7.29498839 L9.34598541,8.7 C9.34598541,8.7 11.1732265,9.31523437 11.1732265,9.31523437 C11.6403222,9.47250609 12.1428675,9.22457657 12.3008953,8.74570313 L12.6280585,7.75429687 C12.7837571,7.28248174 13.2647344,7.07917156 13.7009406,7.29947834 L14.8796059,7.89476545 C15.7601466,8.33948421 16.7269068,9.46648951 17.0331889,10.3946197 L17.0830463,10.5457031 C17.2387449,11.0175183 16.9561285,11.4 16.4656183,11.4 L13.8009733,11.4 L12.0189781,13.2 L12.0189781,15.015919 C12.0189781,15.5041835 11.7405414,15.61875 11.3957227,15.2704473 L10.236983,14.1 L9.25216787,14.5973827 C8.8118975,14.8197421 8.45498784,15.3994783 8.45498784,15.9 C8.45498784,16.3970563 8.80456327,17.0118645 9.2107158,17.2580182 L12.9099757,19.5 L13.8947908,19.0026173 C14.3350612,18.7802579 15.0162561,18.8183745 15.4320035,19.0983398 L19.7477607,22.0045816 C21.3842844,23.1066207 21.4906005,25.0341584 19.9878775,26.3076091 L16.4715636,29.2874348 C16.0984226,29.6036452 15.5824366,30.1960211 15.3130082,30.6200946 L13.8009729,33 C13.3088887,33 12.995925,32.6093202 13.1006804,32.1331581 L14.3096882,26.6376532 C14.520817,25.6779738 13.9707442,24.5357431 13.0976108,24.0947654 L12.7223406,23.9052346 C11.8417999,23.4605158 11.4800454,22.3887558 11.9199672,21.5000227 L12.9099757,19.5 L8.41107755,17.9852154 C7.94324417,17.8276953 7.31902279,17.3906968 7.00711679,16.996875 L4.98917024,14.4489557 Z"></path>
+                </svg>
+                For<br/>Devops
+            </a>
+        </div>
+        <div class="nav-pages">
 
-		
+            <a href="../" >Home</a>
+
+            <a href="." class="active">Docs</a>
+
+            <a href="../guides/" >Guides</a>
+
+            <!--<a href="https://github.com/appcelerator/dev/">GitHub</a>-->
+            <a href="https://github.com/appcelerator/amp/">GitHub</a>
+        </div>
+    </div>
+</nav>
+
+
 
 
 
 <div class="hero hero-oneline">
-	<div class="hero-centered">
-		<h1>AMP Documentation</h1>
-	</div>
+    <div class="hero-centered">
+        <h1>AMP Documentation</h1>
+    </div>
 </div>
 
 <div class="docs">
-	<div class="docs-nav">
-		
-			<div class="docs-nav-section">
-				<a class="docs-nav-section-title" href='#/introduction/'>Introduction</a>
-				
-					
-				
-					
-						<a class="docs-nav-item" href="#/introduction/prerequisites/">Prerequisites</a>
-					
-				
-					
-						<a class="docs-nav-item" href="#/introduction/install/">Download the AMP CLI</a>
-					
-				
-					
-						<a class="docs-nav-item" href="#/introduction/certificates/">Self-signed certificates</a>
-					
-				
-					
-						<a class="docs-nav-item" href="#/introduction/edge-version/">Using the latest &quot;edge&quot; version</a>
-					
-				
-					
-						<a class="docs-nav-item" href="#/introduction/usage/">Using AMP</a>
-					
-				
-					
-						<a class="docs-nav-item" href="#/introduction/example/">Example</a>
-					
-				
-					
-						<a class="docs-nav-item" href="#/introduction/view-logs/">View logs</a>
-					
-				
-					
-						<a class="docs-nav-item" href="#/introduction/view-stats/">View metrics</a>
-					
-				
-					
-						<a class="docs-nav-item" href="#/introduction/teams/">Teams</a>
-					
-				
-			</div>
-		
-	</div>
+    <div class="docs-nav">
 
-	<div class="docs-content">
-		
-			<article class="docs-section">
-				<a class="docs-section-target" id="/introduction/" name="/introduction/"></a>
-				<h2 class="docs-section-title"><a href='#/introduction/'>Introduction</a></h2>
-			</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/intro/"  name="/introduction/intro/"></a>
-					
-					<div class="docs-method-prose">
-						
-						<p>The following introduction will help you get up and running quickly with AMP.</p>
+        <div class="docs-nav-section">
+            <a class="docs-nav-section-title" href='#/introduction/'>Introduction</a>
 
-					</div>
-				</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/prerequisites/"  name="/introduction/prerequisites/"></a>
-					
-						<h3 class="docs-method-title">
-							<a href='#/introduction/prerequisites/'>Prerequisites</a>
-							
-						</h3>
-						<a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/01-prerequisites.md" target="_blank">edit</a>
-					
-					<div class="docs-method-prose">
-						
-						<p>We recommend installing the Docker CE stable channel release 17.09 on your system.
-Make sure you check the &quot;What to know before you install&quot; section on the Docker site to ensure your system meets the requirements.</p>
-<blockquote>
-<p>NOTE: We currently do not support Docker Toolbox on any OS.</p>
-</blockquote>
-<h4 id="macos">MacOS</h4>
-<p>On MacOS, Docker can be installed via the Docker website.</p>
-<p><a href="https://docs.docker.com/docker-for-mac/install/">Docker for Mac</a></p>
-<h4 id="windows">Windows</h4>
-<p>On Windows, Docker can be installed via the Docker website.</p>
-<p><a href="https://docs.docker.com/docker-for-windows/install/">Docker for Windows</a></p>
-<h4 id="linux">Linux</h4>
-<p>On Linux, Docker can be installed via the Docker website. You can find your specific distribution in the tables.</p>
-<p><a href="https://docs.docker.com/engine/installation/">Docker for Linux</a></p>
-<p>In addition, there is another step you must perform for your system.</p>
-<p>Increase virtual memory (needed for Elasticsearch):</p>
-<pre><code>$ sudo sysctl -w vm.max_map_count=262144</code></pre>
-<p>To make this change permanent, you can run the following and reboot:</p>
-<pre><code>$ echo &quot;vm.max_map_count = 262144&quot; | sudo tee -a /etc/sysctl.conf</code></pre>
 
-					</div>
-				</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/install/"  name="/introduction/install/"></a>
-					
-						<h3 class="docs-method-title">
-							<a href='#/introduction/install/'>Download the AMP CLI</a>
-							
-						</h3>
-						<a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/02-install.md" target="_blank">edit</a>
-					
-					<div class="docs-method-prose">
-						
-						<p>Download the latest release of the CLI for your platform:</p>
-<p><a href="https://github.com/appcelerator/amp/releases">https://github.com/appcelerator/amp/releases</a></p>
-<p>Place the <code>amp</code> binary from the release archive into some location in your system path. For example:</p>
-<pre><code>$ sudo mv ./amp /usr/local/bin</code></pre>
 
-					</div>
-				</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/certificates/"  name="/introduction/certificates/"></a>
-					
-						<h3 class="docs-method-title">
-							<a href='#/introduction/certificates/'>Self-signed certificates</a>
-							
-						</h3>
-						<a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/03-certificates.md" target="_blank">edit</a>
-					
-					<div class="docs-method-prose">
-						
-						<p>The connection between the CLI and the AMP server is secured with TLS.</p>
-<p>When you run the AMP environment on your own machine, a self-signed certificate
-is automatically generated. You will need to use the <code>-k</code> option or add the
-CA to your local key store.</p>
 
-					</div>
-				</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/edge-version/"  name="/introduction/edge-version/"></a>
-					
-						<h3 class="docs-method-title">
-							<a href='#/introduction/edge-version/'>Using the latest &quot;edge&quot; version</a>
-							
-						</h3>
-						<a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/04-edge-version.md" target="_blank">edit</a>
-					
-					<div class="docs-method-prose">
-						
-						<p>Alternatively, if you wish to work with the latest development version directly from <code>master</code> on Github,
-you can fork the repo and build your own CLI. The entire toolchain has been containerized so you do not need
-to install <code>go</code>, <code>make</code>, or any other tools on your system (other than Docker).</p>
-<p>To get the repo setup, you can run the following set of commands:</p>
-<pre><code>$ cd $GOPATH/src
+            <a class="docs-nav-item" href="#/introduction/prerequisites/">Prerequisites</a>
+
+
+
+            <a class="docs-nav-item" href="#/introduction/downloading-cli/">Downloading the AMP CLI</a>
+
+
+
+            <a class="docs-nav-item" href="#/introduction/creating-cluster/">Creating a cluster</a>
+
+
+
+            <a class="docs-nav-item" href="#/introduction/031-local/">Creating an AMP cluster locally</a>
+
+
+
+            <a class="docs-nav-item" href="#/introduction/032-aws/">Creating an AMP cluster on AWS</a>
+
+
+
+            <a class="docs-nav-item" href="#/introduction/deploying-stacks/">Deploying stacks</a>
+
+
+
+            <a class="docs-nav-item" href="#/introduction/development-version/">Using the development version</a>
+
+
+        </div>
+
+        <div class="docs-nav-section">
+            <a class="docs-nav-section-title" href='#/reference/'>AMP CLI Reference</a>
+
+
+
+            <a class="docs-nav-item" href='#/reference/cluster/'>Cluster Management Commands</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/completion/">Completion Command</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/config/">Configuration Management Commands</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/logs/">Log Command</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/password/">Password Management Commands</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/secret/">Secret Management Commands</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/service/">Service Management Commands</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/settings/">Settings Command</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/stack/">Stack Management Commands</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/team/">Team Management Commands</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/user/">User Management Commands</a>
+
+
+
+            <a class="docs-nav-item" href="#/reference/version/">Version Command</a>
+
+
+        </div>
+
+    </div>
+
+    <div class="docs-content">
+
+        <article class="docs-section">
+            <a class="docs-section-target" id="/introduction/" name="/introduction/"></a>
+            <h2 class="docs-section-title"><a href='#/introduction/'>Introduction</a></h2>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/introduction/intro/"  name="/introduction/intro/"></a>
+
+            <div class="docs-method-prose">
+
+                <p>The following introduction will help you get up and running quickly with AMP.</p>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/introduction/prerequisites/"  name="/introduction/prerequisites/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/introduction/prerequisites/'>Prerequisites</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/01-prerequisites.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>We recommend installing the Docker CE stable channel release 17.09.1 on your system.
+                    Make sure you check the <code>What to know before you install</code> section on the Docker site for Mac OS and Windows to ensure your system meets the requirements.</p>
+                <ul>
+                    <li><a href="https://docs.docker.com/docker-for-mac/install/#what-to-know-before-you-install">What to know before you install - Docker for Mac</a></li>
+                    <li><a href="https://docs.docker.com/docker-for-windows/install/#what-to-know-before-you-install">What to know before you install - Docker for Windows</a></li>
+                </ul>
+                <blockquote>
+                    <p>NOTE: We currently do not support Docker Toolbox on any OS.</p>
+                </blockquote>
+                <h4 id="mac-os">Mac OS</h4>
+                <p>For the installers, go to <a href="https://docs.docker.com/docker-for-mac/install/">Docker for Mac</a>.</p>
+                <p>Configure Docker to use maximum CPU and at least half of the maximum memory. You can configure settings by right clicking the whale icon on the status bar and clicking <code>Preferences</code> -&gt; <code>Advanced</code>.
+                    Make sure you apply these changes for Docker to be configured with the new settings. </p>
+                <h4 id="windows">Windows</h4>
+                <p>For the installers, go to <a href="https://docs.docker.com/docker-for-windows/install/">Docker for Windows</a>.</p>
+                <p>Configure Docker to use maximum CPU and at least half of the maximum memory. You can configure settings by right clicking the whale icon in the Notifications area and clicking <code>Settings</code> -&gt; <code>Advanced</code>.
+                    Make sure you apply these changes for Docker to be configured with the new settings. </p>
+                <h4 id="linux">Linux</h4>
+                <p>You can find specific Linux distribution in the tables on <a href="https://docs.docker.com/engine/installation/">Docker for Linux</a>.</p>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/introduction/downloading-cli/"  name="/introduction/downloading-cli/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/introduction/downloading-cli/'>Downloading the AMP CLI</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/02-downloading-cli.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>Download the latest release of the CLI for your platform from <a href="https://github.com/appcelerator/amp/releases">here</a>.
+                    Place the <code>amp</code> binary from the release archive into some location in your system path. </p>
+                <p>For example:</p>
+                <pre><code>$ sudo chmod +x ./amp
+$ sudo mv ./amp /usr/local/bin</code></pre>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/introduction/creating-cluster/"  name="/introduction/creating-cluster/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/introduction/creating-cluster/'>Creating a cluster</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/03-creating-cluster.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>You can create an AMP cluster on your machine locally or on AWS.</p>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/introduction/031-local/"  name="/introduction/031-local/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/introduction/031-local/'>Creating an AMP cluster locally</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/031-local.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <h1 id="local-cluster-creation">Local cluster creation</h1>
+                <p>This is the default mode for cluster creation on AMP. </p>
+                <h2 id="why-do-you-need-a-local-cluster-">Why do you need a local cluster?</h2>
+                <p>During development of your application, you will want to have a quick and easy way of running and tearing down a cluster, rather than relying on a cloud based solution. </p>
+                <h2 id="prerequisites">Prerequisites</h2>
+                <h3 id="mac-os">Mac OS</h3>
+                <p>To enable Docker engine metrics, you must add some configuration to the Docker daemon. </p>
+                <p>Right click on the whale icon, go to <code>Preferences</code> -&gt; <code>Daemon</code> and select the <code>Advanced</code> tab, and add this:</p>
+                <pre><code>{
+    &quot;experimental&quot; : true,
+    &quot;metrics-addr&quot; : &quot;0.0.0.0:9323&quot;
+}</code></pre>
+                <p>Make sure you apply these changes for Docker to be configured with the new settings. </p>
+               
+                <h3 id="windows">Windows</h3>
+                <p>To enable Docker engine metrics, you must add some configuration to the Docker daemon. </p>
+                <p>You can configure settings by right clicking the whale icon in the Notifications area and clicking <code>Settings</code> -&gt; <code>Daemon</code> -&gt; <code>Advanced</code> tab.</p>
+                <pre><code>{
+    &quot;experimental&quot; : true,
+    &quot;metrics-addr&quot; : &quot;0.0.0.0:9323&quot;
+}</code></pre>
+                <p>Make sure you apply these changes for Docker to be configured with the new settings. </p>
+                <h3 id="linux">Linux</h3>
+                <p>To enable Docker engine metrics, you must add some configuration to the Docker daemon.  </p>
+                <p>Edit or create the <code>daemon.json</code> file in located <code>etc/docker</code> to include:</p>
+                <pre><code>$ sudo nano /etc/docker/daemon.json
+{
+    &quot;experimental&quot; : true,
+    &quot;metrics-addr&quot; : &quot;0.0.0.0:9323&quot;
+}</code></pre>
+                <p>You must perform this additional step to increase virtual memory needed for Elasticsearch.</p>
+                <pre><code>$ sudo sysctl -w vm.max_map_count=262144</code></pre>
+                <p>To make this change permanent, you can run the following and reboot:</p>
+                <pre><code>$ echo &quot;vm.max_map_count = 262144&quot; | sudo tee -a /etc/sysctl.conf</code></pre>
+                <h2 id="cluster-deployment">Cluster Deployment</h2>
+                <p>To create a cluster locally:</p>
+                <pre><code>$ amp cluster create
+...
+2017/12/04 01:17:59 ampctl (version: 0.18.0-dev, build: a51daf88)
+...
+{&quot;Swarm Status&quot;:&quot;active&quot;,&quot;Core Services&quot;:17,&quot;User Services&quot;:0}</code></pre>
+                <p>This will create a single node swarm cluster on your machine and deploy AMP services on top of it.</p>
+                <p>Once you have started a local cluster, you will be able to deploy stacks and monitor the associated services by signing up.</p>
+                <pre><code>$ amp user signup --name user1 --email user1@amp.com --password [password]
+Verification is not necessary for this cluster.
+Hi user1! You have been automatically logged in.</code></pre>
+                <blockquote>
+                    <p>NOTE: See the <a href="#/reference/user/">user documentation</a> in the AMP CLI Reference section for additional details about the user account related operations.</p>
+                </blockquote>
+                <p>With the local cluster, you do not need to verify the account created and you will be logged in automatically after an account creation. </p>
+                <p>While deploying a local cluster, the default certificate is self-signed. You need to use the <code>-k</code> or <code>--insecure</code> option when using any of the AMP commands. </p>
+                <blockquote>
+                    <p>TIP: Set an alias for <code>amp</code> as <code>alias amp=&#39;amp -k&#39;</code>. </p>
+                </blockquote>
+                <h2 id="what-s-next-">What&#39;s next?</h2>
+                <p>You can now deploy a stackfile on your newly created local cluster.</p>
+                <h2 id="cluster-status">Cluster Status</h2>
+                <p>You can check if a cluster is running or not by running the following command: </p>
+                <pre><code>$ amp cluster status</code></pre>
+                <p>The output of this command displays the provider, swarm status, and the number of core and user services running.</p>
+                <pre><code>Provider:      local
+Swarm Status:  active
+Core Services: 17
+User Services: 0</code></pre>
+                <blockquote>
+                    <p>NOTE: You must be logged in to the AMP cluster to run this command.</p>
+                </blockquote>
+                <h2 id="cluster-teardown">Cluster Teardown</h2>
+                <p>If you no longer use the deployed cluster, it can be removed by running the following command:</p>
+                <pre><code>$ amp cluster rm</code></pre>
+                <p>On success, the output looks something like this:</p>
+                <pre><code>2017/12/08 21:49:40 ampctl (version: 0.18.0-dev, build: 4ad78fdd)
+Removing service amp_agent
+Removing service amp_alertmanager
+Removing service amp_ampbeat
+Removing service amp_amplifier
+Removing service amp_cadvisor
+Removing service amp_docker-engine
+Removing service amp_elasticsearch
+Removing service amp_etcd
+Removing service amp_gateway
+Removing service amp_grafana
+Removing service amp_haproxy_exporter
+Removing service amp_kibana
+Removing service amp_nats
+Removing service amp_nats_exporter
+Removing service amp_nodes
+Removing service amp_prometheus
+Removing service amp_proxy
+2017/12/08 21:49:40 waiting for all services to clear up...
+2017/12/08 21:49:40 Removing container /amp_ampbeat.1.rwh3rnmwpf94rasrcah5hunk1 [Exited (1) 10 minutes ago]
+2017/12/08 21:49:52 Removing container /amp_prometheus.1.bj1g2byp3te34sjov0rlz6gos [Exited (0) 9 seconds ago]
+2017/12/08 21:49:52 Removing container /amp_nats_exporter.1.mv8lgp1c3jqm3ng009izh3oak [Exited (143) 9 seconds ago]
+2017/12/08 21:49:55 Removing container /amp_agent.7z8aobvghzadvrb8n3zf22ake.pinz6oz4mk2m6y8h47455nrxk [Exited (137) 3 seconds ago]
+2017/12/08 21:49:56 cleared up
+2017/12/08 21:49:56 Removing volume [amp_etcd-data]...
+2017/12/08 21:49:56 Removing volume [amp_ampagent]...
+2017/12/08 21:49:56 Removing volume [amp_elasticsearch-data]...
+2017/12/08 21:49:56 Removing volume [amp_prometheus-data]...
+2017/12/08 21:49:56 Removing volume [amp_alertmanager-data]...
+2017/12/08 21:49:56 Removing volume [amp_grafana-data]...
+2017/12/08 21:49:56 Successfully removed network public [prn2d38x4q90vq3vqhejcb2h5]
+2017/12/08 21:49:56 Successfully removed network monit [ik9ojg3hh5t2gdjv96s098cis]
+2017/12/08 21:49:56 Successfully removed network core [zfc7cios4kmz4ogdknu5mrd2k]
+2017/12/08 21:49:58 cluster deleted</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                </blockquote>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/introduction/032-aws/"  name="/introduction/032-aws/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/introduction/032-aws/'>Creating an AMP cluster on AWS</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/032-aws.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <h1 id="aws-cluster-creation">AWS cluster creation</h1>
+                <p>This page outlines the steps to set up an AMP cluster on AWS.</p>
+                <h2 id="why-do-you-need-an-amp-cluster-on-aws-">Why do you need an AMP cluster on AWS?</h2>
+                <p>When you application is ready or when you want your team to share a common cluster, it is easy to spin up an AMP cluster on AWS. </p>
+                <h2 id="prerequisites">Prerequisites</h2>
+                <p>The prerequisites for creating an AWS cluster on AMP is to have:</p>
+                <h3 id="aws-account">AWS Account</h3>
+                <p>You will need an AWS account with adequate IAM rights to deploy Cloud Formation stacks. </p>
+                <p>If you don&#39;t already have one, sign up <a href="https://portal.aws.amazon.com/billing/signup#/start">here</a>. </p>
+                <p>To learn more about managing IAM roles, see the official documentation from AWS <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html?icmpid=docs_iam_console">here</a>.</p>
+                <h3 id="aws-key-pair">AWS Key Pair</h3>
+                <p>You will need an AWS key pair specific to the region you choose. </p>
+                <p>For creating key pairs on AWS, see the official documentation from AWS <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html">here</a>.</p>
+                <h3 id="aws-access-key">AWS Access Key</h3>
+                <p>You will need to provide your <code>AWS Access Key ID</code> and <code>AWS Secret Access Key</code> in order to deploy an AMP cluster.</p>
+                <p>You can find out more about AWS access keys <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey">here</a>.</p>
+                <blockquote>
+                    <p>NOTE: If you already have the AWS CLI installed on your system, make sure it is configured since the AMP CLI will use this information for cluster creation. See more details <a href="http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html">here</a>. </p>
+                </blockquote>
+                <h2 id="checklist">Checklist</h2>
+                <p>Before deploying your cluster, you will need the following elements:</p>
+                <ul>
+                    <li>Pick a region, for instance <code>us-west-2</code></li>
+                    <li>AWS Key pair name in the region you chose</li>
+                    <li>AWS Access Key ID</li>
+                    <li>AWS Secret Access Key</li>
+                    <li>Stack name</li>
+                </ul>
+                <blockquote>
+                    <p>NOTE: If you already have the AWS CLI installed, the AMP CLI will use the <code>Region</code>, <code>AWS Access Key ID</code> and <code>AWS Secret Access Key</code> from it.</p>
+                </blockquote>
+                <h2 id="cluster-deployment">Cluster Deployment</h2>
+                <p>If you don&#39;t have the AWS CLI installed, enter the following:</p>
+                <pre><code>$ export REGION=us-west-2
+$ export KEY_NAME=user-keypair
+$ export ACCESS_KEY_ID=xxxxx
+$ export SECRET_ACCESS_KEY=xxxxx
+$ export STACK_NAME=amp-test
+
+$ amp cluster create --provider aws --aws-region $REGION --aws-parameter KeyName=$KEY_NAME --aws-access-key-id $ACCESS_KEY_ID --aws-secret-access-key $SECRET_ACCESS_KEY --aws-stackname $STACK_NAME --aws-sync</code></pre>
+                <p>If you have the AWS CLI installed, enter the following:</p>
+                <pre><code>$ export KEY_NAME=user-keypair
+$ export STACK_NAME=amp-test
+
+$ amp cluster create --provider aws --aws-parameter KeyName=$KEY_NAME --aws-stackname $STACK_NAME --aws-sync</code></pre>
+                <p>The AMP cluster deployment on AWS takes roughly 10 minutes to complete. On success, the output looks something like this:</p>
+                <pre><code>Fri Dec  8 01:16:53 UTC 2017    amp-test                     CREATE_IN_PROGRESS (User Initiated)
+Fri Dec  8 01:17:16 UTC 2017    Vpc                          CREATE_COMPLETE
+Fri Dec  8 01:19:34 UTC 2017    ManagerAutoScalingGroup      CREATE_COMPLETE
+Fri Dec  8 01:20:56 UTC 2017    ManagerWaitCondition         CREATE_COMPLETE
+Fri Dec  8 01:21:02 UTC 2017    CoreWorkerAutoScalingGroup   CREATE_COMPLETE
+Fri Dec  8 01:21:02 UTC 2017    UserWorkerAutoScalingGroup   CREATE_COMPLETE
+Fri Dec  8 01:21:58 UTC 2017    CoreWaitCondition            CREATE_COMPLETE
+Fri Dec  8 01:21:59 UTC 2017    UserWaitCondition            CREATE_COMPLETE
+Fri Dec  8 01:23:50 UTC 2017    ApplicationWaitCondition     CREATE_COMPLETE
+Fri Dec  8 01:23:54 UTC 2017    amp-test                     CREATE_COMPLETE
+-------------------------------------------------------------------------------
+VPC ID                                     | vpc-a92ec8d0
+NFSv4 Endpoint                             | disabled
+URL for cluster health dashboard           | amp-test-ManagerEx-8IKHVRJOUT98-636105687.us-west-2.elb.amazonaws.com:8080
+internal endpoint for the registry service | disabled
+public facing endpoint for the cluster     | amp-test-ManagerEx-8IKHVRJOUT98-636105687.us-west-2.elb.amazonaws.com</code></pre>
+                <h2 id="what-s-next-">What&#39;s next?</h2>
+                <p>You can now deploy a stackfile on your newly created local cluster.</p>
+                <h2 id="customization">Customization</h2>
+                <p>The cluster has been created with the default configuration. You&#39;ll need to update it according to your convenience.</p>
+                <h2 id="domain-certificate">Domain Certificate</h2>
+                <p>You should generate a certificate valid for the domain that will be served by the cluster. Ideally it can be a wildcard certificate, but it should at least include the virtual hosts amplifier, dashboard, kibana and alerts.</p>
+                <p>The default certificate is stored in the secret <code>certificate_amp</code>. It should include the private key, the certificate and the full certificate chain (in this order). Create a new secret with your new certificate:</p>
+                <pre><code>$ cat certificate.pem | docker secret create certificate_amp_custom -</code></pre>
+                <p>Update the services that use it:</p>
+                <pre><code>$ docker service update --secret-rm certificate_amp --secret-add source=certificate_amp_custom,target=/run/secrets/cert0.pem amp_amplifier
+$ docker service update --secret-rm certificate_amp --secret-add source=certificate_amp_custom,target=/run/secrets/cert0.pem amp_proxy</code></pre>
+                <p>Check that the service is stabilizing with the new configuration</p>
+                <pre><code>$ docker service ps amp_amplifier
+$ docker service ps amp_proxy</code></pre>
+                <h2 id="secrets">Secrets</h2>
+                <p><code>amp cluster create</code> uses a docker secret named <code>amplifier_yml</code> for amplifier configuration.</p>
+                <p>If the secret is not present before the invocation of <code>amp cluster create</code>, it will be automatically generated with sensible values for the following keys:</p>
+                <ul>
+                    <li><code>JWTSecretKey</code>: A secret key of 128 random characters will be generated.</li>
+                    <li><code>SUPassword</code>: A super user password of 32 characters will be generated and displayed during the execution of the command.</li>
+                </ul>
+                <p>If the secret is already created, it will be used as is without any modifications.</p>
+                <h2 id="amplifier-configuration">Amplifier configuration</h2>
+                <p>The secret <code>amplifier_yml</code> contains the configuration for the user registration.
+                    To enable it, you should get a Sendgrid key (you can have a 30 days trial key <a href="https://app.sendgrid.com/signup?id=71713987-9f01-4dea-b3d4-8d0bcd9d53ed">here</a>.</p>
+                <pre><code>$ cat &gt; amplifier.yml &lt;&lt; EOF
+EmailKey: SENDGRID_KEY
+SUPassword: SUPER_USER_PASSWORD
+JWTSecretKey: JWT_RANDOM_STRING
+EOF
+$ cat amplifier.yml | docker secret create amplifier_yml_custom -</code></pre>
+                <p>Update the service:</p>
+                <pre><code>$ docker service update --secret-rm amplifier_yml --secret-add source=amplifier_yml_custom,target=/run/secrets/amplifier.yml amp_amplifier</code></pre>
+                <p>Check that the service is stabilizing with the new configuration.</p>
+                <h2 id="alerting-configuration">Alerting configuration</h2>
+                <p>You can configure where notifications will be sent. The default (no notification configured) is in the secret <code>alertmanager_yml</code>.</p>
+                <p>Create a new file with your configuration:</p>
+                <pre><code>$ cat &gt; alertmanager.yml &lt;&lt; EOF
+---
+global:
+  slack_api_url: &quot;https://hooks.slack.com/services/YOUR_WEB_HOOK&quot;
+templates:
+- &#39;/etc/alertmanager/template/*.tmpl&#39;
+route:
+  receiver: &#39;slack-receiver&#39;
+  repeat_interval: 5m
+  routes:
+  - receiver: &#39;slack-receiver&#39;
+receivers:
+- name: &quot;slack-receiver&quot;
+  slack_configs:
+  - channel: &quot;@CHANNEL_NAME&quot;
+    username: &quot;Alertmanager&quot;
+    title: &#39;*DOMAIN_NAME* {{ range .Alerts }}{{ .Annotations.summary }} {{ end }}&#39;
+    text: &#39;{{ range .Alerts }}{{ .Annotations.description }} {{ end }}&#39;
+    send_resolved: true
+EOF
+$ cat alertmanager.yml | docker secret create alertmanager_yml_custom -</code></pre>
+                <p>Update the service:</p>
+                <pre><code>$ docker service update --secret-rm alertmanager_yml --secret-add source=alertmanager_yml_custom,target=/run/secrets/alertmanager.yml amp_alertmanager</code></pre>
+                <p>Check that the service is stabilizing with the new configuration.</p>
+                <p>Now you can also configure the alerts definitions. By default, the Docker config <code>prometheus_alerts_rules</code> contains empty rules.</p>
+                <p>Create a new file with the configuration. You can find an example in the amp repo in <code>examples/monitoring/prometheus_alerts.rules</code>.</p>
+                <pre><code>$ cat prometheus_alerts.rules | docker config create prometheus_alerts_rules_custom -</code></pre>
+                <p>Update the service</p>
+                <pre><code>$ docker service update --config-rm prometheus_alerts_rules --config-add source=prometheus_alerts_rules_custom,target=/etc/prometheus/alerts.rules amp_prometheus</code></pre>
+                <p>Check that the service is stabilizing with the new configuration.</p>
+                <h2 id="update-the-domain-name">Update the domain name</h2>
+                <p>You should create or update the domain name that you use to create the certificate. Use a service such as route53, dnsimple or similar to create a CNAME pointing to the DNS name from the output of the cluster creation. If you don&#39;t have access to it anymore, you can find it in the output of the cloudformation stack on the AWS console.</p>
+                <p>Wait for the DNS to be updated.</p>
+                <h2 id="login-and-validate-the-configuration">Login and validate the configuration</h2>
+                <p>Use the CLI from your workstation (not from the cluster anymore) and check that the connection is done and that the certificate is valid:</p>
+                <pre><code>$ amp -s DOMAIN_NAME user ls</code></pre>
+                <p>Then signup a new user</p>
+                <pre><code>$ amp -s DOMAIN_NAME user signup --name LOGIN --email EMAIL</code></pre>
+                <p>You should receive an email with a command line for the validation of the account.</p>
+                <p>Note that if it is a test cluster, you can skip certificate creation step and use -k (--insecure) AMP CLI argument.</p>
+                <p>Also you can grab public endpoint (ELB) DNS name from Cloudformation -&gt; Stacks - Outputs -&gt; DNSTarget key.</p>
+                <pre><code>$ DOMAIN_NAME=nderzhak-ManagerE-1FQNBP6KF3O24-818587690.us-west-2.elb.amazonaws.com; ./amp -s $DOMAIN_NAME -k user ls
+[nderzhak-ManagerE-1FQNBP6KF3O24-818587690.us-west-2.elb.amazonaws.com:50101]
+USERNAME   EMAIL   CREATED ON
+su                 29 Nov 17 14:41</code></pre>
+                <h2 id="cluster-cleanup">Cluster Cleanup</h2>
+                <p>You can remove the old secrets and config now that the cluster is configured and running.</p>
+                <pre><code>$ docker secret rm amplifier_yml
+$ docker secret rm alertmanager_yml
+$ docker secret rm certificate_amp
+$ docker config rm prometheus_alerts_rules</code></pre>
+                <h2 id="cluster-teardown">Cluster Teardown</h2>
+                <p>If you no longer use the deployed cluster, it can be removed by running the following command:</p>
+                <pre><code>$ amp cluster rm --provider aws --aws-stackname $STACK_NAME --aws-sync</code></pre>
+                <p>The cluster teardown on AWS takes about 10 minutes to complete. On success, the output looks something like this:</p>
+                <pre><code>Fri Dec  8 01:17:16 UTC 2017    Vpc                          CREATE_COMPLETE
+Fri Dec  8 01:19:34 UTC 2017    ManagerAutoScalingGroup      CREATE_COMPLETE
+Fri Dec  8 01:20:56 UTC 2017    ManagerWaitCondition         CREATE_COMPLETE
+Fri Dec  8 01:21:02 UTC 2017    UserWorkerAutoScalingGroup   CREATE_COMPLETE
+Fri Dec  8 01:21:02 UTC 2017    CoreWorkerAutoScalingGroup   CREATE_COMPLETE
+Fri Dec  8 01:21:58 UTC 2017    CoreWaitCondition            CREATE_COMPLETE
+Fri Dec  8 01:21:59 UTC 2017    UserWaitCondition            CREATE_COMPLETE
+Fri Dec  8 01:23:50 UTC 2017    ApplicationWaitCondition     CREATE_COMPLETE
+Fri Dec  8 01:23:54 UTC 2017    amp-test                     CREATE_COMPLETE
+Fri Dec  8 01:26:12 UTC 2017    amp-test                     DELETE_IN_PROGRESS (User Initiated)
+Fri Dec  8 01:26:14 UTC 2017    ApplicationWaitCondition     DELETE_IN_PROGRESS
+Fri Dec  8 01:26:15 UTC 2017    UserWaitCondition            DELETE_IN_PROGRESS
+Fri Dec  8 01:26:15 UTC 2017    CoreWaitCondition            DELETE_IN_PROGRESS
+Fri Dec  8 01:26:17 UTC 2017    UserWorkerAutoScalingGroup   DELETE_IN_PROGRESS
+Fri Dec  8 01:26:17 UTC 2017    CoreWorkerAutoScalingGroup   DELETE_IN_PROGRESS
+Fri Dec  8 01:29:54 UTC 2017    ManagerWaitCondition         DELETE_IN_PROGRESS
+Fri Dec  8 01:29:56 UTC 2017    ManagerAutoScalingGroup      DELETE_IN_PROGRESS
+Fri Dec  8 01:35:11 UTC 2017    Vpc                          DELETE_IN_PROGRESS
+Fri Dec  8 01:35:30 UTC 2017    amp-test                     DELETE_COMPLETE</code></pre>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/introduction/deploying-stacks/"  name="/introduction/deploying-stacks/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/introduction/deploying-stacks/'>Deploying stacks</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/04-deploying-stacks.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>You can deploy your own stacks on your AMP cluster.
+                    This section is a WIP.</p>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/introduction/development-version/"  name="/introduction/development-version/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/introduction/development-version/'>Using the development version</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/05-development-version.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>Alternatively, if you wish to work with the latest development version directly from <code>master</code> on Github,
+                    you can fork the repo and build your own CLI. The entire toolchain has been containerized so you only need to install Docker.</p>
+                <blockquote>
+                    <p>TIP: Here is the official <a href="https://golang.org/doc/code.html#Workspaces">Go documentation</a> explaining how to create a Go project structure and set GOPATH. </p>
+                </blockquote>
+                <p>To get the repo setup, you can run the following set of commands to clone the repository into your <code>go</code> workspace and add the CLI path to your system <code>PATH</code>.</p>
+                <pre><code>$ cd $GOPATH/src
 $ mkdir -p github.com/appcelerator
 $ cd github.com/appcelerator
 $ git clone https://github.com/appcelerator/amp
 $ cd amp
-$ export PATH=bin/{YourOS}/amd64:$PATH</code></pre>
-<p>This will clone the repository into your <code>go</code> workspace and add the CLI path to your system <code>$PATH</code>.</p>
-<p>To build the CLI, you can then run:</p>
-<pre><code>$ ampmake buildall-cli</code></pre>
-<p>This will build cross-compiled versions of the CLI and place them in the appropriate locations under <code>./bin</code>.</p>
-<p>If you already have <code>gnu</code> installed on your system, you can instead run:</p>
-<pre><code>$ make build-cli</code></pre>
-<p>This will build your OS-specific CLI in <code>./bin</code> and it is much faster.</p>
+$ export PATH=$GOPATH/src/github.com/appcelerator/amp/bin/{YourOS}/amd64:$PATH</code></pre>
+                <p>To build the CLI and the core AMP images, you can then run:</p>
+                <pre><code>$ ampmake build</code></pre>
+                <p>This will build cross-compiled versions of the CLI and place them in the appropriate locations under <code>./bin</code>.
+                    In addition, this will build the development versions of each of the images necessary for creation of the AMP cluster.</p>
 
-					</div>
-				</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/usage/"  name="/introduction/usage/"></a>
-					
-						<h3 class="docs-method-title">
-							<a href='#/introduction/usage/'>Using AMP</a>
-							
-						</h3>
-						<a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/05-usage.md" target="_blank">edit</a>
-					
-					<div class="docs-method-prose">
-						
-						<p>Run <code>amp --help</code> to get the CLI help menu for AMP.</p>
-<pre><code>$ amp --help
+            </div>
+        </article>
+    </div>
+    <div class="docs-content">
 
-Usage:	amp [OPTIONS] COMMAND
+        <article class="docs-section">
+            <a class="docs-section-target" id="/reference/" name="/reference/"></a>
+            <h2 class="docs-section-title"><a href='#/reference/'>AMP CLI Reference</a></h2>
+        </article>
 
-Deploy, manage, and monitor container stacks.
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/cluster/"  name="/reference/cluster/"></a>
+            <h3 class="docs-method-title">
+                <a href='#/reference/cluster/'>Cluster Management Commands</a>
+
+            </h3>
+            <div class="docs-method-prose">
+
+                <p>The <code>amp cluster</code> command manages all cluster related operations for AMP.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp cluster --help
+
+Usage:  amp cluster [OPTIONS] COMMAND
+
+Cluster management operations
+
+Options:
+  -h, --help                 Print usage
+  -k, --insecure             Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string        Specify server (host:port)
+  -v, --volume stringSlice   Bind mount a volume
+
+Management Commands:
+  node        Cluster node management operations
+
+Commands:
+  create      Set up a cluster in swarm mode
+  rm          Destroy an amp cluster
+  status      Retrieve details about an amp cluster
+
+Run &#39;amp cluster COMMAND --help&#39; for more information on a command.</code></pre>
+                <blockquote>
+                    <p>NOTE: Currently a number of <code>amp cluster create</code> options are in a state of transition.
+                        We recommend you stick to the outlined examples for deploying cluster environments.</p>
+                </blockquote>
+                <p>For learning how to deploy a cluster locally on your machine, see the section on <a href="#/introduction/031-local/">local cluster creation</a></p>
+                <p>For learning how to deploy a cluster on AWS, see the section on <a href="#/introduction/032-aws/">AWS cluster creation</a></p>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <h3 id="local-cluster">Local cluster</h3>
+                <ul>
+                    <li>To create a cluster:<pre><code>$ amp cluster create</code></pre>
+                    </li>
+                </ul>
+                <p>AMP comprises of 4 features: </p>
+                <ul>
+                    <li>core (mandatory)</li>
+                    <li>metrics (optional) </li>
+                    <li>logs (optional)</li>
+                    <li>proxy (optional)</li>
+                </ul>
+                <p>It is possible to disable the optional features using the following commands:</p>
+                <p>To create a local cluster without metrics: </p>
+                <pre><code>$ amp cluster create --local-no-metrics</code></pre>
+                <p>To create a local cluster without logging:</p>
+                <pre><code>$ amp cluster create --local-no-logs</code></pre>
+                <p>To create a local cluster without proxy:</p>
+                <pre><code>$ amp cluster create --local-no-proxy</code></pre>
+                <ul>
+                    <li>To know the status of a cluster:<pre><code>$ amp cluster status</code></pre>
+                    </li>
+                </ul>
+                <blockquote>
+                    <p>NOTE: You must be logged in to the AMP cluster to run this command.</p>
+                </blockquote>
+                <ul>
+                    <li>To remove a cluster:<pre><code>$ amp cluster rm</code></pre>
+                    </li>
+                </ul>
+                <h3 id="aws-cluster">AWS cluster</h3>
+                <ul>
+                    <li>To create a cluster:</li>
+                </ul>
+                <p>If you don&#39;t have the AWS CLI installed, enter the following:</p>
+                <pre><code>$ export REGION=us-west-2
+$ export KEY_NAME=user-keypair
+$ export ACCESS_KEY_ID=xxxxx
+$ export SECRET_ACCESS_KEY=xxxxx
+$ export STACK_NAME=amp-test
+
+$ amp cluster create --provider aws --aws-region $REGION --aws-parameter KeyName=$KEY_NAME --aws-access-key-id $ACCESS_KEY_ID --aws-secret-access-key $SECRET_ACCESS_KEY --aws-stackname $STACK_NAME --aws-sync</code></pre>
+                <p>If you have the AWS CLI installed, enter the following:</p>
+                <pre><code>$ export KEY_NAME=user-keypair
+$ export STACK_NAME=amp-test
+
+$ amp cluster create --provider aws --aws-parameter KeyName=$KEY_NAME --aws-stackname $STACK_NAME --aws-sync</code></pre>
+                <ul>
+                    <li>To remove a cluster:<pre><code>$ amp cluster rm --provider aws --aws-stackname $STACK_NAME --aws-sync</code></pre>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/completion/"  name="/reference/completion/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/completion/'>AMP Completion Command</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/completion.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp completion</code> command allows you to add shell completion to your AMP CLI.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp completion --help
+
+Usage:    amp completion SHELL [flags]
+
+Output shell completion code for the specified shell (bash or zsh)
 
 Examples:
-amp version
+
+        # Install bash completion on a Mac using homebrew
+
+            $ brew install bash-completion
+
+        Once installed, bash_completion must be evaluated.  This can be done by adding the
+        following line to the .bash_profile, and reloading it
+
+            source $(brew --prefix)/etc/bash_completion
+
+            $ source $HOME/.bash_profile
+
+        # Write bash completion code to a file
+
+            $ amp completion bash &gt; ~/.config/amp/completion.bash.inc
+
+        Add this line in your $HOME/.bash_profile, and reload it
+
+            source &quot;$HOME/.config/amp/completion.bash.inc&quot;
+
+            $ source $HOME/.bash_profile
+
+        # Load the amp completion code for zsh[1] into the current shell
+        source &lt;(amp completion zsh)
 
 Options:
   -h, --help            Print usage
-  -k, --insecure        Control whether amp verifies the server's certificate chain and host name
-  -s, --server string   Specify server (host:port)
-  -v, --version         Print version information and quit
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                </blockquote>
+                <h2 id="installation">Installation</h2>
+                <p>In order to use shell completion with AMP, follow the installation instructions for your corresponding shell.</p>
+                <h3 id="bash">Bash</h3>
+                <p>Make sure bash completion is installed:</p>
+                <ul>
+                    <li>Most current Linux OS (non-minimal installations) have bash completion.</li>
+                    <li>On Mac, install with <code>brew install bash-completion</code></li>
+                </ul>
+                <p>After bash completion is installed, add the following line to your <code>~/.bash_profile</code> file:</p>
+                <pre><code>source $(brew --prefix)/etc/bash_completion</code></pre>
+                <p>Then, either source your <code>~/.bash_profile</code> or launch a new terminal.</p>
+                <p>Now you need to write the bash completion, generated by AMP, to a file. We recommend writing
+                    it to a file in your <code>$HOME/.config/amp</code> directory.</p>
+                <pre><code>$ amp completion bash &gt; ~/.config/amp/completion.bash.inc</code></pre>
+                <p>After doing this, add the following line to your <code>~/.bash_profile</code> file to source your bash completion file.</p>
+                <pre><code>source &quot;$HOME/.config/amp/completion.bash.inc&quot;</code></pre>
+                <p>Then either source your <code>~/.bash_profile</code> or launch a new terminal again.</p>
+                <h3 id="zsh">Zsh</h3>
+                <p>In a Zsh shell, load the amp completion code with:</p>
+                <pre><code>$ source &lt;(amp completion zsh)</code></pre>
+                <p>or add <code>source &lt;(amp completion zsh)</code> to your <code>~/.zshrc</code> file.</p>
+                <h2 id="examples">Examples</h2>
+                <p>With the shell completion code loaded for AMP, you can hit tab twice to view the shell completion.</p>
+                <pre><code>$ amp
+cluster     completion  config      login       logout      logs        password    service     stack       stats       team        user        version     whoami</code></pre>
+                <pre><code>$ amp stack
+deploy    logs      ls        rm        services</code></pre>
+                <pre><code>$ amp stack deploy -c examples/stacks/pinger/
+README.md   pinger.yml</code></pre>
 
-Management Commands:
-  cluster     Cluster management operations
-  password    Password management operations
-  service     Service management operations
-  stack       Stack management operations
-  team        Team management operations
-  user        User management operations
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/config/"  name="/reference/config/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/config/'>Configuration Management Commands</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/config.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp config</code> command manages all configuration related operations for AMP.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp config --help
+
+Usage:    amp config [OPTIONS] COMMAND
+
+Configuration management operations
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
 
 Commands:
-  completion  Output shell completion code for the specified shell (bash or zsh)
-  login       Login to account
-  logout      Logout of account
-  logs        Display logs matching provided criteria
-  settings    Display AMP settings
-  stats       Display statistics
-  version     Show version information
-  whoami      Display currently logged in account name
+  create      Create a config from a file or STDIN as content
+  ls          List configs
+  remove      Remove one or more configs
 
-Run 'amp COMMAND --help' for more information on a command.</code></pre>
-<blockquote>
-<p><em>A large number of AMP commands are interactive, so if necessary options are not provided
-you will be prompted to provide them before the command runs</em>.</p>
-</blockquote>
-<h3 id="target-an-amp-cluster">Target an AMP cluster</h3>
-<p>When using <code>amp</code>, every command takes the <code>--server|-s</code> option.
-This option is used to define the target cluster you will be running your commands with.
-The target server is displayed at the top of every CLI command output.
-You can also add a default <code>--server|-s</code> value to your <code>amp.yml</code> settings file.</p>
-<blockquote>
-<p>For more information on creating your AMP settings file, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/settings.md">settings documentation</a>.</p>
-</blockquote>
-<p>The server location of our hosted AMP is <code>COMING SOON</code>. This location is currently
-acting as a playground for anyone to signup and use as they like.</p>
-<p>The default value for the <code>--server|-s</code> option is <code>localhost:50101</code>, which points to a local
-cluster that can be deployed on your system&#39;s Docker engine.</p>
-<p>In order to make sure you&#39;re connected to the specified server when running commands,
-you can run the <code>amp version</code> command to test this.</p>
-<pre><code>$ amp -s your.server.com version
+Run &#39;amp config COMMAND --help&#39; for more information on a command.</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                    <p>NOTE: To be able to perform any secret related operations, you must be logged in to AMP using a verified account.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <ul>
+                    <li><p>To create a config:</p>
+                        <pre><code>$ amp config create test ./test
+66cxrj0wcn2ugqspyocmui2tb</code></pre>
+                        <p>On success, this command returns an alphanumeric ID which is the secret ID.</p>
+                    </li>
+                    <li><p>To list all config:</p>
+                        <pre><code>$ amp config ls
+ID                          NAME
+66cxrj0wcn2ugqspyocmui2tb   test
+c74xny5z0nv5mtyb8cl8k799y   prometheus_alerts_rules</code></pre>
+                    </li>
+                    <li><p>To remove one or more configs:</p>
+                        <pre><code>$ amp config rm test
+test</code></pre>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/logs/"  name="/reference/logs/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/logs/'>Log Command</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/logs.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp logs</code> command is used to query or stream logs. It provides useful filtering options to manage what is presented.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp logs --help
+
+Usage:    amp logs [OPTIONS] SERVICE [flags]
+
+Display logs matching provided criteria
+
+Options:
+      --container string   Filter by the given Container
+  -f, --follow             Follow log output
+  -h, --help               Print usage
+  -i, --include            Include AMP logs
+  -k, --insecure           Control whether amp verifies the server&#39;s certificate chain and host name
+  -m, --meta               Display entry metadata
+      --msg string         Filter the message content by the given pattern
+      --node string        Filter by the given node
+  -n, --number int32       Number of results (default 1000)
+  -r, --raw                Display raw logs (no prefix)
+      --regexp             Treat &#39;--msg&#39; option as a regular expression
+  -s, --server string      Specify server (host:port)
+      --since int32        Number of days to include in the search (maximum 100) (default 2)
+      --stack string       Filter by the given stack</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                    <p>NOTE: To be able to perform any logs related operations, you must be logged in to AMP using a verified account.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <ul>
+                    <li><p>To fetch and follow all the logs:</p>
+                        <pre><code>$ amp logs -f</code></pre>
+                    </li>
+                    <li><p>To fetch and follow the logs for a specific service:</p>
+                        <pre><code>$ amp logs -f amp_etcd</code></pre>
+                    </li>
+                    <li><p>To search for a specific pattern through all the logs:</p>
+                        <pre><code>$ amp logs --msg error</code></pre>
+                    </li>
+                    <li><p>To fetch the logs for a service called <code>foobar</code>, using partial service name:</p>
+                        <pre><code>$ amp logs foo</code></pre>
+                    </li>
+                    <li><p>To fetch infrastructure logs:</p>
+                        <pre><code>$ amp logs -i</code></pre>
+                    </li>
+                    <li><p>To fetch all the logs and display metadata associated with each entry:</p>
+                        <pre><code>$ amp logs -m</code></pre>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/password/"  name="/reference/password/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/password/'>Password Management Commands</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/password.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp password</code> command is used to manage all password related operations for AMP.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp password --help
+
+Usage:    amp password [OPTIONS] COMMAND 
+
+Password management operations
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
+
+Commands:
+  change      Change password
+  reset       Reset password
+  set         Set password
+
+Run &#39;amp password COMMAND --help&#39; for more information on a command.</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <ul>
+                    <li><p>To update your current password:</p>
+                        <pre><code>$ amp password change
+current password: [oldpassword]
+new password: [newpassword]
+Your password change has been successful.</code></pre>
+                    </li>
+                    <li><p>If you have forgotten your password and need it reset:</p>
+                        <pre><code>$ amp password reset [username]</code></pre>
+                        <blockquote>
+                            <p>NOTE: If you are working on a cluster without email verification, such as a local cluster, this command will be disabled.</p>
+                        </blockquote>
+                    </li>
+                </ul>
+                <p>An email with instructions to reset password will be sent to the registered email address. In this email,
+                    you will be sent a link to reset your password with or you can reset it with the provided CLI command.</p>
+                <ul>
+                    <li>To set a new password:<pre><code>$ amp password set --token [token]</code></pre>
+                        <blockquote>
+                            <p>NOTE: If you are working on a cluster without email verification, such as a local cluster, this command will be disabled</p>
+                        </blockquote>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/secret/"  name="/reference/secret/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/secret/'>Secret Management Commands</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/secret.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp secret</code> command manages all operations related to AMP secrets.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp secret --help
+
+Usage:    amp secret [OPTIONS] COMMAND
+
+Secret management operations
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
+
+Commands:
+  create      Create a secret from a file or STDIN as content
+  ls          List secrets
+  remove      Remove one or more secrets
+
+Run &#39;amp secret COMMAND --help&#39; for more information on a command.</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                    <p>NOTE: To be able to perform any secret related operations, you must be logged in to AMP using a verified account.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <ul>
+                    <li><p>To create a secret:</p>
+                        <pre><code>$ amp secret create test ./test
+c60z5iv6kguxdk5p1n4p7lulm</code></pre>
+                        <p>On success, this command returns an alphanumeric ID which is the secret ID.</p>
+                    </li>
+                    <li><p>To list all secrets:</p>
+                        <pre><code>$ amp secret ls
+ID                          NAME
+8lpnhb7k140s65ftdjwav1k35   certificate_amp
+c60z5iv6kguxdk5p1n4p7lulm   test
+huns47stt3ade3neufohl5pzg   alertmanager_yml
+i2gjv0m8ilhl5aqixmp0oeoy0   amplifier_yml</code></pre>
+                    </li>
+                    <li><p>To remove one or more secrets:</p>
+                        <pre><code>$ amp secret rm test
+test</code></pre>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/service/"  name="/reference/service/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/service/'>Service Management Commands</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/service.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp service</code> command is used to manage all service related operations for AMP.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp service --help
+
+Usage:    amp service [OPTIONS] COMMAND
+
+Service management operations
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
+
+Commands:
+  inspect     Display detailed information of a service
+  logs        Display logs of given service matching provided criteria
+  ls          List services
+  ps          List tasks of a service
+  scale       Scale a replicated service
+
+Run &#39;amp service COMMAND --help&#39; for more information on a command.</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                    <p>NOTE: To be able to perform any service related operations, you must be logged in to AMP using a verified account.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <ul>
+                    <li><p>To inspect a service:</p>
+                        <pre><code>$ amp service inspect pinger
+{
+      &quot;ID&quot;: &quot;0k1fzgc2pfuyowej0gedm6kmr&quot;,
+      &quot;Version&quot;: {
+              &quot;Index&quot;: 231
+      },
+      &quot;CreatedAt&quot;: &quot;2017-07-05T22:00:41.444720874Z&quot;,
+      &quot;UpdatedAt&quot;: &quot;2017-07-05T22:00:41.449032363Z&quot;,
+      &quot;Spec&quot;: {
+              &quot;Name&quot;: &quot;pinger_pinger&quot;,
+              &quot;Labels&quot;: {
+                      &quot;com.docker.stack.namespace&quot;: &quot;pinger&quot;
+              },
+              &quot;TaskTemplate&quot;: {
+                      &quot;ContainerSpec&quot;: {
+                              &quot;Image&quot;: &quot;subfuzion/pinger:latest&quot;,
+                              &quot;Labels&quot;: {
+                                      &quot;com.docker.stack.namespace&quot;: &quot;pinger&quot;
+                              },
+                              &quot;Env&quot;: [
+                                      &quot;SERVICE_PORTS=3000&quot;,
+                                      &quot;VIRTUAL_HOST=pinger.examples.*,https://pinger.examples.*&quot;
+                              ],
+                              &quot;StopGracePeriod&quot;: 10000000000,
+                              &quot;DNSConfig&quot;: {}
+                      },
+...</code></pre>
+                        <blockquote>
+                            <p>TIP: Use the <code>service-id</code> or <code>service-name</code> as the argument.</p>
+                        </blockquote>
+                    </li>
+                    <li><p>To list the available services with detailed status about their tasks:</p>
+                        <pre><code>$ amp service ls
+ID                          NAME            MODE         REPLICAS   STATUS    IMAGE                 TAG
+0k1fzgc2pfuyowej0gedm6kmr   pinger_pinger   replicated   3/3        RUNNING   appcelerator/pinger      latest</code></pre>
+                        <blockquote>
+                            <p>NOTE: this command only displays services which are part of user deployed stacks.</p>
+                        </blockquote>
+                    </li>
+                    <li><p>To list the tasks of a service:</p>
+                        <pre><code>$ amp service ps pinger_pinger
+ID                          NAME              IMAGE                        DESIRED STATE   CURRENT STATE   NODE ID                     ERROR
+2oyhxm5eon3u40didkvglc4oa   pinger_pinger.1   appcelerator/pinger:latest   RUNNING         RUNNING         7z8aobvghzadvrb8n3zf22ake
+9uy23btldzx9ww901djhaph4c   pinger_pinger.2   appcelerator/pinger:latest   RUNNING         RUNNING         7z8aobvghzadvrb8n3zf22ake
+nwm34nsxexmhujixni7b1k6gh   pinger_pinger.3   appcelerator/pinger:latest   RUNNING         RUNNING         7z8aobvghzadvrb8n3zf22ake</code></pre>
+                    </li>
+                    <li><p>To retrieve logs of a service:</p>
+                        <pre><code>$ amp service logs pinger
+       pinger_pinger.2 | listening on :3000
+       pinger_pinger.1 | listening on :3000
+       pinger_pinger.3 | listening on :3000
+       pinger_pinger.2 | listening on :3000
+       pinger_pinger.1 | listening on :3000
+       pinger_pinger.3 | listening on :3000
+...</code></pre>
+                        <blockquote>
+                            <p>TIP: Use the <code>service-id</code> or <code>service-name</code> as the argument.</p>
+                        </blockquote>
+                    </li>
+                    <li><p>To scale up or scale down the number of replicas of the service:</p>
+                        <pre><code>$ amp service scale
+service id or name: pinger_pinger
+replicas: 2
+Service pinger_pinger has been scaled to 2 replicas.</code></pre>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/settings/"  name="/reference/settings/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/settings/'>Settings Command</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/settings.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp settings</code> command displays settings for AMP CLI. It can be accessed by storing the value in a settings file or passing it as a command-line argument.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>amp settings --help
+
+Usage:    amp settings [flags]
+
+Display AMP settings
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)</code></pre>
+                <p>In order to start using the CLI settings:</p>
+                <ul>
+                    <li>You can either:<ul>
+                        <li>Create a new directory called <code>.amp</code> in the current working (local) directory and add the config file <code>amp.yml</code> in this directory, OR</li>
+                        <li>Create a new directory called <code>amp</code> in the <code>$HOME/.config</code> directory and add the config file <code>amp.yml</code> in this directory (This is the default location).</li>
+                    </ul>
+                    </li>
+                    <li>Add values to the file in format:<ul>
+                        <li><code>Variable: value</code></li>
+                    </ul>
+                    </li>
+                </ul>
+                <blockquote>
+                    <p>NOTE: For the moment, the settings file only stores the <code>Server</code> parameter,
+                        which is used to point the CLI to a target cluster. More will be added in future releases.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <ul>
+                    <li><p>If the settings file is placed in the directory <code>$HOME/.config/amp</code> with <code>Server: local.appcelerator.io</code>, you can view the settings of AMP using:</p>
+                        <pre><code>$ amp settings
+[local.appcelerator.io:50101]
+Settings file: $HOME/.config/amp/amp.yml
+AMP Settings:
+Server:        local.appcelerator.io:50101</code></pre>
+                    </li>
+                    <li><p>If the settings file is placed in the directory <code>$PWD/.amp</code> with <code>Server: local.appcelerator.io</code>, you can view the settings of AMP using:</p>
+                        <pre><code>$ amp settings
+[local.appcelerator.io:50101]
+Settings file: $PWD/.amp/amp.yml
+AMP Settings:
+Server:        local.appcelerator.io:50101</code></pre>
+                    </li>
+                    <li><p>If you have not defined a <code>settings</code> file:</p>
+                        <pre><code>$ amp settings
+[127.0.0.1:50101]
+Settings file: none
+AMP Settings:
+Server:        127.0.0.1:50101</code></pre>
+                    </li>
+                </ul>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                </blockquote>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/stack/"  name="/reference/stack/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/stack/'>Stack Management Commands</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/stack.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp stack</code> command is used to manage all stack related operations for AMP.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp stack --help
+
+Usage:    amp stack [OPTIONS] COMMAND 
+
+Stack management operations
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
+
+Commands:
+  deploy      Deploy a stack with a Docker Compose v3 file
+  logs        Display filtered logs for stack
+  ls          List deployed stacks
+  rm          Remove one or more deployed stacks
+  services    List services of a stack
+
+Run &#39;amp stack COMMAND --help&#39; for more information on a command.</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.   </p>
+                    <p>NOTE: To be able to perform any stack related operations, you must be logged in to AMP using a verified account.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <ul>
+                    <li><p>To deploy a stack using a compose file:</p>
+                        <pre><code>$ amp stack deploy -c examples/stacks/counter/counter.yml counter
+Deploying stack counter using examples/stacks/counter/counter.yml
+Creating service counter_go
+Creating service counter_redis</code></pre>
+                        <blockquote>
+                            <p>NOTE: If no name is specified for the stack, the name of the stack will be the filename.</p>
+                        </blockquote>
+                    </li>
+                    <li><p>To list the deployed stacks, with detailed status about their services:</p>
+                        <pre><code>$ amp stack ls
+ID                                                                 NAME      RUNNING   COMPLETE   PREPARING   TOTAL   SERVICES   STATUS    OWNER
+95508f3ca3ad3877e8c33e69a92a9e3490eb60395bd1b26f0c6f80f1f5521976   counter   2         0          0           2       2/2        RUNNING   su</code></pre>
+                        <blockquote>
+                            <p>NOTE: this command only displays stacks created by the user. No infrastructure stacks are displayed.</p>
+                        </blockquote>
+                    </li>
+                    <li><p>To list the services within a stack:</p>
+                        <pre><code>$ amp stack services counter
+ID            NAME           MODE        REPLICAS  IMAGE
+k5fzzzryjpda  counter_redis  replicated  1/1       redis
+njsru7ka1gek  counter_go     replicated  3/3       htilford/go-redis-counter</code></pre>
+                    </li>
+                    <li><p>To view the logs of the entire stack:</p>
+                        <pre><code>$ amp stack logs counter
+...
+1:M 05 Jul 21:21:36.050 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 05 Jul 21:21:36.056 # Server started, Redis version 3.2.9
+1:M 05 Jul 21:21:36.056 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command &#39;echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled&#39; as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+...</code></pre>
+                    </li>
+                    <li><p>To update a stack with a new compose file:</p>
+                        <pre><code>$ amp stack deploy -c examples/stacks/counter/counter-2.yml counter
+Deploying stack counter using examples/stacks/counter/counter-2.yml
+Updating service counter_go (id: njsru7ka1gek1xzdt6z4b8wez)
+Updating service counter_redis (id: k5fzzzryjpdaanlvqqu5b5qr7)</code></pre>
+                    </li>
+                    <li><p>To remove a stack:</p>
+                        <pre><code>$ amp stack rm counter
+Removing service counter_redis
+Removing service counter_go</code></pre>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/team/"  name="/reference/team/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/team/'>Team Management Commands</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/team.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp team</code> command is used to manage all team related operations for AMP.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp team --help
+
+Usage:    amp team [OPTIONS] COMMAND
+
+Team management operations
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
+
+Management Commands:
+  member      Manage team members
+  resource    Manage team resources
+
+Commands:
+  create      Create team
+  get         Get team information
+  ls          List teams
+  rm          Remove one or more teams
+
+Run &#39;amp team COMMAND --help&#39; for more information on a command.</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                    <p>NOTE: To be able to perform any team related operations, you must be logged in to AMP using a verified account.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <blockquote>
+                    <p>NOTE: <code>amp team</code> commands that require the <code>--team</code> option will remember the last used team using a local preferences file.
+                        If you want to override this, specify the <code>--team</code> option in the command.</p>
+                </blockquote>
+                <ul>
+                    <li><p>To create a team:</p>
+                        <pre><code>$ amp team create team
+Team has been created.</code></pre>
+                    </li>
+                    <li><p>To retrieve details of a specific team:</p>
+                        <pre><code>$ amp team get team
+Team: team
+Created On: 05 Dec 17 15:25</code></pre>
+                    </li>
+                    <li><p>To retrieve the list of teams:</p>
+                        <pre><code>$ amp team ls
+TEAM   CREATED ON
+team   05 Dec 17 15:25</code></pre>
+                    </li>
+                    <li><p>To remove a team:</p>
+                        <pre><code>$ amp team rm team
+team</code></pre>
+                    </li>
+                </ul>
+                <h2 id="team-member-management-commands">Team Member Management Commands</h2>
+                <p>The <code>amp team member</code> command is used to manage all team member related operations for AMP.</p>
+                <h3 id="usage">Usage</h3>
+                <pre><code>$ amp team member --help
+
+Usage:    amp team member [OPTIONS] COMMAND
+
+Manage team members
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
+
+Commands:
+  add         Add one or more members
+  ls          List members
+  rm          Remove one or more members
+
+Run &#39;amp team member COMMAND --help&#39; for more information on a command.</code></pre>
+                <h3 id="examples">Examples</h3>
+                <ul>
+                    <li><p>To add a member to a team:</p>
+                        <pre><code>$ amp team member add johndoe
+team name: team
+Member(s) have been added to team.</code></pre>
+                        <blockquote>
+                            <p>NOTE: The member to be added to the team must be a existing and verified user account.</p>
+                        </blockquote>
+                    </li>
+                    <li><p>To list members in a team:</p>
+                        <pre><code>$ amp team member ls --team team
+team name: team
+MEMBER
+sample
+johndoe
+...</code></pre>
+                    </li>
+                    <li><p>To remove a member from a team:</p>
+                        <pre><code>$ amp team member rm johndoe
+team name: team
+johndoe</code></pre>
+                    </li>
+                </ul>
+                <h2 id="team-resource-management-commands">Team Resource Management Commands</h2>
+                <p>The <code>amp team resource</code> command is used to manage all team resource related operations for AMP.</p>
+                <h3 id="usage">Usage</h3>
+                <pre><code>$ amp team resource --help
+
+Usage:    amp team resource [OPTIONS] COMMAND
+
+Manage team resources
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
+
+Commands:
+  add         Add one or more resources
+  ls          List resources
+  perm        Change permission level over a resource
+  rm          Remove one or more resources
+
+Run &#39;amp team resource COMMAND --help&#39; for more information on a command.</code></pre>
+                <h3 id="examples">Examples</h3>
+                <ul>
+                    <li><p>To add a resource to a team:</p>
+                        <pre><code>$ amp team resource add 93fce7d3f...
+team name: team
+Resource(s) have been added to team.</code></pre>
+                        <blockquote>
+                            <p>NOTE: Resources can be stacks.</p>
+                        </blockquote>
+                    </li>
+                    <li><p>To list resources available to a team:</p>
+                        <pre><code>$ amp team resource ls
+team name: team
+RESOURCE ID                                                        PERMISSION LEVEL
+93fce7d3fc8ada786c7db6956849343bcc5700f65d8b1512523561166a2ec455   TEAM_READ</code></pre>
+                    </li>
+                    <li><p>To change the permission level of a resource:</p>
+                        <pre><code>$ amp team resource perm 93fce7d3f... write
+team name: team
+Permission level has been changed.</code></pre>
+                        <p>The default permission level of a resource is <code>read</code>. The permission level can be changed to <code>read</code>, <code>write</code> or <code>admin</code>.</p>
+                    </li>
+                    <li><p>To remove a resource from a team:</p>
+                        <pre><code>$ amp team resource rm --team team 93fce7d3f...
+team name: team
+93fce7d3fc8ada786c7db6956849343bcc5700f65d8b1512523561166a2ec455</code></pre>
+                    </li>
+                </ul>
+
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/user/"  name="/reference/user/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/user/'>User Management Commands</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/user.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp user</code> command is used to manage all user related operations for AMP.</p>
+                <p>Other user-related commands that are not managed by <code>amp user</code> include <code>login</code>, <code>logout</code> and <code>whoami</code>.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp user --help
+
+Usage:    amp user [OPTIONS] COMMAND
+
+User management operations
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)
+
+Commands:
+  forgot-login              Retrieve account name
+  get                       Get user information
+  ls                        List users
+  resend-verification-token Resend verification email to registered address
+  rm                        Remove one or more users
+  signup                    Signup for a new account
+  verify                    Verify account
+
+Run &#39;amp user COMMAND --help&#39; for more information on a command.</code></pre>
+                <blockquote>
+                    <p>TIP: Use <code>-h</code> or <code>--help</code> option for any of the AMP commands or sub-commands to more information about the command&#39;s usage.</p>
+                </blockquote>
+                <h2 id="examples">Examples</h2>
+                <blockquote>
+                    <p>NOTE: For the purpose of illustration, we will use the local cluster (which is default) for running AMP commands. </p>
+                </blockquote>
+                <ul>
+                    <li>To signup for a new user account:<pre><code>$ amp user signup
 [your.server.com:50101]
-Client:
- Version:       0.13.0
- Build:         ad6404fd
- Server:        your.server.com:50101
- Go version:    go1.8.1
- OS/Arch:       darwin/amd64
+username: sample
+email: sample@amp.com
+password: [password]
+[user sample @ your.server.com:50101]
+Hi sample! Please check your email to complete the signup process.</code></pre>
+                        <blockquote>
+                            <p>NOTE: If you are working on a cluster without email verification, such as a local cluster,
+                                you will not need to verify your account as you will not be sent an email and you will be logged in automatically.</p>
+                            <pre><code> amp user signup
+ [127.0.0.1:50101]
+ username: sample
+ email: sample@amp.co,
+ password:
+ Verification is not necessary for this cluster.
+ Hi sample! You have been automatically logged in.</code></pre>
+                        </blockquote>
+                    </li>
+                </ul>
+                <p>After signing up, you will then be sent an email to your registered address. In this email, you will
+                    be sent a link to verify your account with or you can verify your account with the provided CLI command.</p>
+                <ul>
+                    <li><p>To verify your account using the token in verification email:</p>
+                        <pre><code>$ amp user verify [token]
+[your.server.com:50101]
+Your account has now been activated.</code></pre>
+                        <blockquote>
+                            <p>NOTE: If you are working on a cluster without email verification, such as a local cluster,
+                                this command will be disabled. </p>
+                            <pre><code> amp -k user verify &lt;TOKEN&gt;
+ [user sample @ 127.0.0.1:50101]
+ Error: `amp user verify` disabled. This cluster has no registration policy</code></pre>
+                            <p>If you are using hosted AMP, you will need to verify your account.</p>
+                        </blockquote>
+                    </li>
+                    <li><p>To login to your new account:</p>
+                        <pre><code>$ amp login
+[127.0.0.1:50501]
+username: sample
+password: [password]
+Welcome back sample!</code></pre>
+                    </li>
+                    <li><p>Once you have logged in, you can check who is currently logged in with <code>amp whoami</code>:</p>
+                        <pre><code>$ amp whoami
+[user sample @ 127.0.0.1:50101]
+Logged in as user: sample</code></pre>
+                        <p>In addition, every <code>amp</code> command will display who you are logged in as at the top of the command output.
+                        <pre><code>$ amp
+[user sample @ 127.0.0.1:50101]
 
+Usage:  amp [OPTIONS] COMMAND
+...</code></pre>
+                    </li>
+                    <li>To logout of your account:
+                        <pre><code>$ amp logout
+[user sample @ 127.0.0.1:50101]
+You have been logged out!</code></pre>
+                    </li>
+                    <li>In the instance that you have forgotten the username associated with your email, you can have the username sent to your registered email account:
+                        <pre><code>$ amp user forgot-login sample@amp.com
+Your login name has been sent to the address: sample@amp.com</code></pre>
+                        <blockquote>
+                            <p>NOTE: If you are working on a cluster without email verification, this command will be disabled.</p>
+                        </blockquote>
+                    </li>
+                    <li>To retrieve details of a specific user:
+                        <pre><code>$ amp user get foo</code></pre>
+                    </li>
+                    <li>To retrieve a list of users:
+                        <pre><code>$ amp user ls</code></pre>
+                    </li>
+                    <li>To remove a user:
+                        <pre><code>$ amp user rm foo</code></pre>
+                        <p>This command only allows you to delete your own account. If you try to delete another user, you will see the following error:</p>
+                    <pre><code>$ amp user rm sample1
+                    [user sample @ 127.0.0.1:50101]
+                            Error: user not authorized</code></pre>
+                        <p>However, the `su` account has the privileges of removing other accounts in the cluster. </p>
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="docs-method">
+            <a class="docs-method-target" id="/reference/version/"  name="/reference/version/"></a>
+
+            <h3 class="docs-method-title">
+                <a href='#/reference/version/'>AMP Version Command</a>
+
+            </h3>
+            <a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/01-reference/version.md" target="_blank">edit</a>
+
+            <div class="docs-method-prose">
+
+                <p>The <code>amp version</code> command displays the current version of AMP.</p>
+                <h2 id="usage">Usage</h2>
+                <pre><code>$ amp version --help
+
+Usage:    amp version [flags]
+
+Show version information
+
+Options:
+  -h, --help            Print usage
+  -k, --insecure        Control whether amp verifies the server&#39;s certificate chain and host name
+  -s, --server string   Specify server (host:port)</code></pre>
+                <h2 id="examples">Examples</h2>
+                <blockquote>
+                    <p>TIP: It would be useful to set an alias for <code>amp</code> as <code>alias amp=&#39;amp -k&#39;</code> in case the certificate on the server is not valid.</p>
+                    <p>NOTE: For the purpose of illustration, we will use the local cluster (which is default) for running AMP commands.</p>
+                </blockquote>
+                <ul>
+                    <li>To view the client and server version for AMP:
+						<pre><code>$ amp version
+Client:
+ Version:       v0.10.0-dev
+ Build:         6f590348
+ Server:        127.0.0.1:50101
+ Go version:    go1.8
+ OS/Arch:       darwin/amd64
 Server:
- Version:       0.13.0
- Build:         ad6404fd
+ Version:       v0.10.0-dev
+ Build:         04daab98
  Go version:    go1.8.1
  OS/Arch:       linux/amd64</code></pre>
-<h4 id="creating-a-local-amp-cluster">Creating a local AMP cluster</h4>
-<pre><code>$ amp cluster create</code></pre>
-<blockquote>
-<p><em>If you are using the unstable version of the CLI, you will need to build the <code>amp-bootstrap</code>
-image using the command <code>make build-bootstrap</code> or <code>ampmake build-bootstrap</code> if your don&#39;t have the build tools,
-and then specify the <code>--tag=local</code> option to the CLI</em></p>
-</blockquote>
-<p>For more examples of cluster commands and deployment in different environments, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/cluster.md">cluster documentation</a>.</p>
-<h3 id="signing-up-and-logging-in">Signing up and logging in</h3>
-<p>In order to be able to use AMP, you will need to signup for a user account, verify the account
-and login.</p>
-<blockquote>
-<p>NOTE: Don&#39;t forget to specify your desired server target!</p>
-</blockquote>
-<p>To signup for amp use:</p>
-<pre><code>$ amp user signup
-username: sample
-email: sample@user.com
-password: [password]</code></pre>
-<p>After signing up, you will then be sent an email to your registered address. In this email, you will
-be sent a link to verify your account with or you can verify your account with the provided CLI command.</p>
-<blockquote>
-<p><em>The verification step is skipped for local deployment, you&#39;ll be logged automatically</em></p>
-</blockquote>
-<p>To verify your account using the token in verification email.</p>
-<pre><code>$ amp user verify [token]</code></pre>
-<blockquote>
-<p>NOTE: You do not need to verify your account on a local cluster</p>
-</blockquote>
-<p>To login to amp</p>
-<pre><code>$ amp login
-username: sample
-password: [password]</code></pre>
-<p>If you are having issues signing up or logging in, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/user.md">user documentation</a>.</p>
-<p>If you are have forgotten or want to change your password, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/password.md">password documentation</a></p>
-<h3 id="ui-and-dashboard">UI and Dashboard</h3>
-<p>Along with our CLI, after deploying a cluster to your desired environment, you can get access to a Grafana Dashboard for metrics and Kibana for logs.</p>
-<h4 id="grafana">Grafana</h4>
-<p>local: <a href="http://dashboard.local.appcelerator.io">http://dashboard.local.appcelerator.io</a></p>
-<p>hosted: <a href="https://dashboard.YOUR.DOMAIN">https://dashboard.YOUR.DOMAIN</a></p>
-<h4 id="kibana">Kibana</h4>
-<p>local:  <a href="http://kibana.local.appcelerator.io">http://kibana.local.appcelerator.io</a></p>
-<p>hosted:  <a href="https://kibana.YOUR.DOMAIN">https://kibana.YOUR.DOMAIN</a></p>
+                        <blockquote>
+                            <p>NOTE: The above example is just a sample of the output of <code>amp version</code> command. The output will vary according to the version of AMP used.</p>
+                        </blockquote>
+                    </li>
+                </ul>
 
-					</div>
-				</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/example/"  name="/introduction/example/"></a>
-					
-						<h3 class="docs-method-title">
-							<a href='#/introduction/example/'>Example</a>
-							
-						</h3>
-						<a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/06-example.md" target="_blank">edit</a>
-					
-					<div class="docs-method-prose">
-						
-						<h4 id="deploying-a-simple-stack">Deploying a simple stack</h4>
-<p>To deploy a standard Docker Compose version 3 stackfile into your cluster, use <code>amp stack deploy</code>.
-There are a number of sample stackfiles under <code>examples/stacks</code> that you can try out.</p>
-<p>Here is a simple example:</p>
-<pre><code>$ curl -O https://raw.githubusercontent.com/appcelerator/amp/master/examples/stacks/pinger/pinger.yml
-$ amp stack deploy -c pinger.yml
-$ amp stack ls
-$ amp service logs pinger
-$ curl http://pinger.examples.local.appcelerator.io/ping</code></pre>
-<p>Or browse to: <a href="https://pinger.examples.local.appcelerator.io/ping">https://pinger.examples.local.appcelerator.io/ping</a>.</p>
-<p>For more information on what you can do with your stack when it is deployed, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/stack.md">stacks documentation</a>.</p>
-<p>For more information on inspecting and manipulating the services within your stack, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/service.md">service documentation</a></p>
+                <ul>
+                    <li>Viewing the version when the target server doesn&#39;t exist:
+						<pre><code>$ amp version
+Client:
+ Version:       v0.12.0-dev
+ Build:         4166f646
+ Server:        127.0.0.1:50101
+ Go version:    go1.8
+ OS/Arch:       darwin/amd64
+Server:         not connected
+ Error:         unable to establish grpc connection: context deadline exceeded</code></pre>
+                        <blockquote>
+                            <p>NOTE: The above example is just a sample of the output of <code>amp version</code> command. The output will vary according to the version of AMP used.</p>
+                        </blockquote>
+                    </li>
+                </ul>
+            </div>
+        </article>
 
-					</div>
-				</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/view-logs/"  name="/introduction/view-logs/"></a>
-					
-						<h3 class="docs-method-title">
-							<a href='#/introduction/view-logs/'>View logs</a>
-							
-						</h3>
-						<a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/07-view-logs.md" target="_blank">edit</a>
-					
-					<div class="docs-method-prose">
-						
-						<h4 id="viewing-and-filtering-logs">Viewing and filtering logs</h4>
-<p>The <code>amp logs</code> command allows for the querying and filtering of both real-time and historical logs.</p>
-<p>To fetch the logs for your cluster:</p>
-<pre><code>$ amp logs
-...
-Cluster status: healthy
-2017/06/29 17:59:32 listening on :3000
-2017/06/29 17:59:37 listening on :3000
-2017/06/29 17:59:37 listening on :3000
-...</code></pre>
-<p>Following on from the previous example of deploying a stack, if you want to fetch the logs of the <code>pinger</code> stack,
-you can run:</p>
-<pre><code>$ amp stack logs pinger
-2017/06/29 17:59:32 listening on :3000
-...</code></pre>
-<p>This will get the logs of every service in the stack.</p>
-<p>If you want to get the logs for the individual services in the stack, you can run:</p>
-<pre><code>$ amp service logs pinger
-2017/06/29 17:59:32 listening on :3000
-...</code></pre>
-<p>For more detailed examples of the querying and filtering options for logs, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/logs.md">logs documentation</a></p>
 
-					</div>
-				</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/view-stats/"  name="/introduction/view-stats/"></a>
-					
-						<h3 class="docs-method-title">
-							<a href='#/introduction/view-stats/'>View metrics</a>
-							
-						</h3>
-						<a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/08-view-stats.md" target="_blank">edit</a>
-					
-					<div class="docs-method-prose">
-						
-						<p>The <code>amp stats</code> command allows for the querying and filtering of real-time and historical statistics.</p>
-<p>To fetch the stats of your cluster</p>
-<pre><code>$ amp stats
-Stats on services period=now-10m, No filter
-SERVICE         CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX</code></pre>
-<p>Following on from the previous example of deploying a stack, if you want to display the stats of the <code>pinger</code> stack,
-you can run:</p>
-<pre><code>$ amp stats --stack
-Stats on stacks period=now-10m, No filter
-STACK     CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX
-pinger    0.00%   6.7 MB      5.9 GB   0.3%    0/s       0/s        212.0 B/s   112.0 B/s</code></pre>
-<p>If you want to display the stats for the individual services in the stack, you can run:</p>
-<pre><code>$ amp stats --service
-Stats on services period=now-10m, No filter
-SERVICE         CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX       NET TX
-pinger_pinger   0.00%   6.7 MB      5.9 GB   0.3%    0/s       0/s        214.0 B/s   112.0 B/s</code></pre>
-<p>If you want to display the stats for all the containers replicating the service, you can run:</p>
-<pre><code>$ amp stats --container
-Stats on containers period=now-10m, No filter
-CONTAINER              CPU %   MEM USAGE   LIMIT    MEM %   IO READ   IO WRITE   NET RX      NET TX
-pinger_pinger_6bc02a   0.00%   1.2 MB      2.0 GB   0.1%    0/s       0/s        73.0 B/s   38.0 B/s
-pinger_pinger_6e8e55   0.00%   960.0 KB    2.0 GB   0.0%    0/s       0/s        73.0 B/s   38.0 B/s
-pinger_pinger_cbf5cd   0.00%   4.5 MB      2.0 GB   0.2%    0/s       0/s        72.0 B/s   38.0 B/s</code></pre>
-<p>For more detailed examples of the querying and filtering options for stats, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/stats.md">stats documentation</a></p>
-
-					</div>
-				</article>
-			
-				<article class="docs-method">
-					<a class="docs-method-target" id="/introduction/teams/"  name="/introduction/teams/"></a>
-					
-						<h3 class="docs-method-title">
-							<a href='#/introduction/teams/'>Teams</a>
-							
-						</h3>
-						<a class="docs-method-edit" href="https://github.com/appcelerator/amp.github.io/blob/master/doc/dev/00-introduction/09-teams.md" target="_blank">edit</a>
-					
-					<div class="docs-method-prose">
-						
-						<h4 id="team-management">Team management</h4>
-<p>Once you have signed up with <code>amp signup</code>, you can start creating teams and add members.</p>
-<p>To create a team, just specify team name as an argument to the <code>team create</code> command:</p>
-<pre><code>$ amp team create team
-Team has been created.</code></pre>
-<p>After creating a team, you will be the owner of that team and you can then add other users to that team.</p>
-<p>In addition to creating new teams, you can delegate resources in the form of stacks using the <code>amp team resource</code> commands.</p>
-<p>For more information on team management, see the <a href="https://github.com/appcelerator/amp/blob/master/docs/team.md">team documentation</a></p>
-
-					</div>
-				</article>
-			
-		
-	</div>
+    </div>
 </div>
 
 
 
-		<footer>
-            <p>AMP is an open source project sponsored by <a href="https://www.axway.com">Axway</a>. It is licensed under <a href="https://github.com/appcelerator/amp/blob/master/LICENSE">Apache 2.0</a>.</p>
-		</footer>
+<footer>
+    <p>AMP is an open source project sponsored by <a href="https://www.axway.com">Axway</a>. It is licensed under <a href="https://github.com/appcelerator/amp/blob/master/LICENSE">Apache 2.0</a>.</p>
+</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-		<script src="/static/js/global.js"></script>
-		
-			<script src="/static/js/docs.js"></script>
-		
-	</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="/static/js/global.js"></script>
+
+<script src="/static/js/docs.js"></script>
+
+</body>
 </html>
